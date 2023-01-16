@@ -30,6 +30,7 @@ class _loginpageState extends State<loginpage> {
               SizedBox(width: 300,
                 child: Column(
                   children: [
+
                     Text("Enter your Login details here,"),
                     Padding(padding: EdgeInsets.all(15)),
                     TextField(
@@ -61,10 +62,13 @@ class _loginpageState extends State<loginpage> {
                     Text("- - - - - - - - - - -  or - - - - - - - - - - - ",style: TextStyle(fontSize: 20),),
                     Padding(padding: EdgeInsets.all(10)),
                     Text("Don't have a account,"),
-                    OutlinedButton(onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => homepage()));
-                    } ,
-                      child: Text("Sign up ",style: TextStyle(color: Colors.orange),),
+                    Padding(padding: EdgeInsets.all(10)),
+                    SizedBox(
+                      child: OutlinedButton(onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp()));
+                      } ,
+                        child: Text("Sign up ",style: TextStyle(color: Colors.orange)),
+                      ),
                     ),
                   ],
                 ),
