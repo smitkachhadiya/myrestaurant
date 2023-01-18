@@ -8,7 +8,6 @@ void main() {
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
-
   @override
   State<MyApp> createState() => _MyAppState();
 }
@@ -112,55 +111,30 @@ class _MyAppState extends State<MyApp> {
                           labelStyle: TextStyle(fontSize: 14),
                           prefixIcon: Icon(Icons.admin_panel_settings_sharp)),
                     ),
-                    // Padding(padding: const EdgeInsets.all(10),
-                    // child: ElevatedButton(
-                    //   onPressed: () async {
-                    //     print("Before");
-                    //     DateTime? date = await showDatePicker(
-                    //         context: context,
-                    //         initialDate: DateTime.now(),
-                    //         firstDate: DateTime(1960),
-                    //         lastDate: DateTime(2023));
-                    //     if (date != null) {
-                    //       print(
-                    //           date); //pickedDate output format => 2021-03-10 00:00:00.000
-                    //       String formattedDate = DateFormat('yyyy-MM-dd').format(date);
-                    //       print(
-                    //           formattedDate); //formatted date output using intl package =>  2021-03-16
-                    //       setState(() {
-                    //         dateInput.text =
-                    //             formattedDate; //set output date to TextField value.
-                    //       });
-                    //     } else {}
-                    //   }, child: Text("Datepicker"),),),
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: TextField(
+                    Padding(padding: const EdgeInsets.all(10)),
+
+                    Padding(padding: const EdgeInsets.all(10)),
+                      TextField(
                         onTap: () async {
                           DateTime? pickedDate = await showDatePicker(
                               context: context,
                               initialDate: DateTime.now(),
-                              firstDate: DateTime(2004),
+                              firstDate: DateTime(2000),
                               lastDate: DateTime(2024));
-
                           if (pickedDate != null) {
-                            String formattedDate =
-                                DateFormat('yyyy-MM-dd').format(pickedDate);
+                            String formattedDate = DateFormat('yyyy-MM-dd').format(pickedDate);
                             setState(() {
-                              dateInput.text =
-                                  formattedDate; //setoutputdatetoTextFieldvalue.
+                              dateInput.text = formattedDate; //setoutputdatetoTextFieldvalue.
                             });
                           }
                         },
                         controller: dateInput,
                         decoration: InputDecoration(
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10)),
+                            border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                             hintText: 'date',
                             prefixIcon: Icon(Icons.date_range)),
                       ),
-                    ),
-
+                    Padding(padding: const EdgeInsets.all(10)),
                     TextField(
                       decoration: InputDecoration(
                         contentPadding: EdgeInsets.all(20),
