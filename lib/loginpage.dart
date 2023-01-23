@@ -44,7 +44,7 @@ class _loginpageState extends State<loginpage> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Enter your Login details here :-"),
+                    Text("Enter your Details here :-"),
                     Padding(padding: EdgeInsets.only(top: 15)),
                     TextField(
                       decoration: InputDecoration(
