@@ -24,13 +24,11 @@ class _loginpageState extends State<loginpage> {
             child: Column(
               children: [
                 Container(
-                  height: 50,
-                  width: 350,
+                  height: 80,
+                  width: 370,
                   alignment: AlignmentDirectional.topCenter,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
                   child: Container(
+                    padding: EdgeInsets.only(left: 10),
                     child: Text(
                       "Log in ",
                       style: TextStyle(fontSize: 40, color: Colors.white),
@@ -44,7 +42,7 @@ class _loginpageState extends State<loginpage> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Enter your Details here :-"),
+                      Text("Enter your details here :-"),
                       Padding(padding: EdgeInsets.only(top: 15)),
                       TextField(
                         decoration: InputDecoration(
@@ -70,7 +68,7 @@ class _loginpageState extends State<loginpage> {
                             prefixIcon: Icon(Icons.admin_panel_settings_sharp)),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(left: 190),
+                        padding: EdgeInsets.only(left: 190,top: 5),
                         child: Text("Forgot password ?", style: TextStyle(color: Colors.lightBlue)),
                       ),
                       Padding(padding: const EdgeInsets.all(30)),

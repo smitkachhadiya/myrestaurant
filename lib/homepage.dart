@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant/HomePageCenter.dart';
 import 'package:restaurant/HomePageNotifications.dart';
+import 'package:restaurant/HomePageProfile.dart';
 import 'package:restaurant/HomePageSearchPage.dart';
 
 class homepage extends StatefulWidget {
@@ -23,7 +24,6 @@ class _homepageState extends State<homepage> {
     // TODO: implement build
     return Scaffold(
       backgroundColor: Color(0xFFF8F8F9),
-
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.ac_unit), label: "home"),
@@ -46,6 +46,7 @@ class _homepageState extends State<homepage> {
           new HomePageCenter(),
           new HomePageSearchPage(),
           new HomePageNotifications(),
+          new HomePageProfile(),
           //activity name
         ],
       ),
