@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:restaurant/homepage.dart';
 import 'package:restaurant/main.dart';
+import 'package:restaurant/register.dart';
 
 class loginpage extends StatefulWidget{
   @override
@@ -20,7 +21,7 @@ class _loginpageState extends State<loginpage> {
           child: Column(
             children: [
               Row(children: [
-                Container(height: 50,width: 390,
+                Container(height: 50,width: 350,
                   alignment: AlignmentDirectional.center,
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),),
                   child: Container(
@@ -53,10 +54,12 @@ class _loginpageState extends State<loginpage> {
                       ),
                     ),
                     Padding( padding: const EdgeInsets.all(30)),
-                    OutlinedButton(onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => homepage()));
-                    } ,
-                      child: Text("Login ",style: TextStyle(color: Colors.orange),),
+                    Container(width: 300,decoration: BoxDecoration(color: Colors.orange,borderRadius: BorderRadius.circular(30)),
+                      child: TextButton(onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => homepage()));
+                      } ,
+                        child: Text("Login ",style: TextStyle(color: Colors.white,fontSize: 20)),
+                      ),
                     ),
                     Padding(padding: EdgeInsets.all(20)),
                     Text("- - - - - - - - - - -  or - - - - - - - - - - - ",style: TextStyle(fontSize: 20),),
@@ -64,10 +67,12 @@ class _loginpageState extends State<loginpage> {
                     Text("Don't have a account,"),
                     Padding(padding: EdgeInsets.all(10)),
                     SizedBox(
-                      child: OutlinedButton(onPressed: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp()));
-                      } ,
-                        child: Text("Sign up ",style: TextStyle(color: Colors.orange)),
+                      child: Container(width: 300,decoration: BoxDecoration(color: Colors.orange,borderRadius: BorderRadius.circular(30)),
+                        child: TextButton(onPressed: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => register()));
+                        } ,
+                          child: Text("Sign up ",style: TextStyle(color: Colors.white,fontSize: 20)),
+                        ),
                       ),
                     ),
                   ],
