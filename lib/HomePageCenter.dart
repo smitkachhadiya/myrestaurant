@@ -16,10 +16,10 @@ class _HomePageCenterState extends State<HomePageCenter> {
         Container(height: 200, width: double.infinity,
           decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("assets/images/home1.png"), fit: BoxFit.cover,),
-        ),alignment: AlignmentDirectional.bottomStart,
-        padding: EdgeInsets.all(20),
-        child:Text("hello",style: TextStyle(fontSize: 30,color: Colors.white)),
+                image: AssetImage("assets/images/home1.png"), fit: BoxFit.cover,),),
+          alignment: AlignmentDirectional.bottomStart,
+          padding: EdgeInsets.all(20),
+          child:Text("hello",style: TextStyle(fontSize: 30,color: Colors.white)),
         )
         ],
       ),
