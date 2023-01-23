@@ -22,7 +22,8 @@ class _homepageState extends State<homepage> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      backgroundColor: Color(0xFFFFF6EB),
+      backgroundColor: Color(0xFFF8F8F9),
+
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.ac_unit), label: "home"),
