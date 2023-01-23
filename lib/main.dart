@@ -4,6 +4,8 @@ import 'package:intl/intl.dart';
 import 'package:restaurant/register.dart';
 
 void main() {
-  runApp(MaterialApp(home: loginpage()));
+  runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: loginpage()));
 }
 
