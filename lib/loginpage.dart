@@ -73,7 +73,7 @@ class _loginpageState extends State<loginpage> {
                       Container(
                         width: 300,
                         decoration: BoxDecoration(
-                            color: Color(0xFFFFC81F),
+                            color: Color(0xFFFFAC2F),
                             borderRadius: BorderRadius.circular(30)),
                         child: TextButton(
                           onPressed: () {
@@ -99,7 +99,7 @@ class _loginpageState extends State<loginpage> {
                         child: Container(
                           width: 300,
                           decoration: BoxDecoration(
-                              color: Color(0xFFFFC81F),
+                              color: Color(0xFFFFAC2F),
                               borderRadius: BorderRadius.circular(30)),
                           child: TextButton(
                             onPressed: () {

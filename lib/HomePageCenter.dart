@@ -72,7 +72,7 @@ class _HomePageCenterState extends State<HomePageCenter> {
                       Navigator.push(
                           context,MaterialPageRoute(builder: (context) => HomePageSearchPage()));
                     },
-                    child: Text("Explore > ",style: TextStyle(color: Colors.orange,fontSize: 30)),),
+                    child: Text("Explore > ",style: TextStyle(color: Color(0xFFFFAC2F),fontSize: 30)),),
                 ),
             ],
           ),

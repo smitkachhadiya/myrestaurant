@@ -21,7 +21,7 @@ class _registerState extends State<register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFFFFF6EB),
+        backgroundColor: Color(0xFFF8F8F9),
         body: Center(
           child: SingleChildScrollView(
             reverse: true,
@@ -144,7 +144,7 @@ class _registerState extends State<register> {
                       ),
                     ),
                     Padding(padding: const EdgeInsets.all(20)),
-                    Container(width: 300,decoration: BoxDecoration(color: Color(0xFFFFC81F),borderRadius: BorderRadius.circular(30)),
+                    Container(width: 300,decoration: BoxDecoration(color: Color(0xFFFFAC2F),borderRadius: BorderRadius.circular(30)),
                       child: TextButton(
                         onPressed: () {
                           Navigator.push(

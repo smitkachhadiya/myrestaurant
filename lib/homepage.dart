@@ -34,7 +34,7 @@ class _homepageState extends State<homepage> {
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
 
-        unselectedItemColor: Colors.orange,
+        unselectedItemColor: Color(0xFFFFAC2F),
         selectedItemColor: Colors.deepPurple,
       ),
       body: new IndexedStack(

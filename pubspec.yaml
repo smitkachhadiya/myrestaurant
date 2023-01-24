@@ -30,6 +30,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   flutter_image_slider:
+  contained_tab_bar_view:
   flutter:
     sdk: flutter
 
@@ -63,6 +64,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - assets/images/img.png
+     - assets/images/img_1.png
      - assets/images/label1.png
      - assets/images/label2.png
      - assets/images/label3.png
