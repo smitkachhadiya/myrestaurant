@@ -144,7 +144,7 @@ class _registerState extends State<register> {
                       ),
                     ),
                     Padding(padding: const EdgeInsets.all(20)),
-                    Container(width: 300,decoration: BoxDecoration(color: Colors.orange,borderRadius: BorderRadius.circular(30)),
+                    Container(width: 300,decoration: BoxDecoration(color: Color(0xFFFFC81F),borderRadius: BorderRadius.circular(30)),
                       child: TextButton(
                         onPressed: () {
                           Navigator.push(

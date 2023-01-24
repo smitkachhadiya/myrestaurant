@@ -12,8 +12,6 @@ class _loginpageState extends State<loginpage> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      // backgroundColor: Color(0xFFFFF6EB),
-
       body: DecoratedBox(
         decoration: BoxDecoration(
           image: DecorationImage(image: AssetImage("assets/images/img.png"),fit: BoxFit.cover),
@@ -75,7 +73,7 @@ class _loginpageState extends State<loginpage> {
                       Container(
                         width: 300,
                         decoration: BoxDecoration(
-                            color: Color(0xFFFFD658),
+                            color: Color(0xFFFFC81F),
                             borderRadius: BorderRadius.circular(30)),
                         child: TextButton(
                           onPressed: () {
@@ -101,7 +99,7 @@ class _loginpageState extends State<loginpage> {
                         child: Container(
                           width: 300,
                           decoration: BoxDecoration(
-                              color: Color(0xFFFFD658),
+                              color: Color(0xFFFFC81F),
                               borderRadius: BorderRadius.circular(30)),
                           child: TextButton(
                             onPressed: () {
