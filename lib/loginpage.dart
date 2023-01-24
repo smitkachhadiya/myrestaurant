@@ -16,7 +16,7 @@ class _loginpageState extends State<loginpage> {
 
       body: DecoratedBox(
         decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage("assets/images/img_1.png"),fit: BoxFit.cover),
+          image: DecorationImage(image: AssetImage("assets/images/img.png"),fit: BoxFit.cover),
         ),
         child: Center(
           child: SingleChildScrollView(
@@ -75,7 +75,7 @@ class _loginpageState extends State<loginpage> {
                       Container(
                         width: 300,
                         decoration: BoxDecoration(
-                            color: Colors.orange,
+                            color: Color(0xFFFFD658),
                             borderRadius: BorderRadius.circular(30)),
                         child: TextButton(
                           onPressed: () {
@@ -101,7 +101,7 @@ class _loginpageState extends State<loginpage> {
                         child: Container(
                           width: 300,
                           decoration: BoxDecoration(
-                              color: Colors.orange,
+                              color: Color(0xFFFFD658),
                               borderRadius: BorderRadius.circular(30)),
                           child: TextButton(
                             onPressed: () {

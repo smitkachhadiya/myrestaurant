@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slider/carousel.dart';
 import 'package:restaurant/HomePageProfile.dart';
+import 'package:restaurant/HomePageSearchPage.dart';
 import 'package:restaurant/loginpage.dart';
 
 
@@ -59,6 +60,20 @@ class _HomePageCenterState extends State<HomePageCenter> {
                   ]
                 ),
               ),
+              Container(
+                height: 301,width: double.infinity,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("assets/images/mainbg2.png",),
+                      fit: BoxFit.cover,)),
+                  padding: EdgeInsets.only(left: 200,top: 200),
+                  child: TextButton(
+                    onPressed: (){
+                      Navigator.push(
+                          context,MaterialPageRoute(builder: (context) => HomePageSearchPage()));
+                    },
+                    child: Text("Explore > ",style: TextStyle(color: Colors.orange,fontSize: 30)),),
+                ),
             ],
           ),
         ),
