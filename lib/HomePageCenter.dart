@@ -49,10 +49,8 @@ class _HomePageCenterState extends State<HomePageCenter> {
                 child: Carousel(
                   autoScroll: true,
                   indicatorHeight: 8,
-
                   autoScrollDuration: Duration(seconds: 3),
                   indicatorBarColor: Colors.transparent,
-
                   items : [
                     Image.asset("assets/images/label1.jpg",fit: BoxFit.cover),
                     Image.asset("assets/images/label2.jpg",fit: BoxFit.cover),
