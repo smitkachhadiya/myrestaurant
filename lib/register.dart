@@ -62,6 +62,7 @@ class _registerState extends State<register> {
                     ),
                     Padding(padding: const EdgeInsets.all(10)),
                     TextField(
+                      keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                           contentPadding: EdgeInsets.all(20),
                           border: OutlineInputBorder(

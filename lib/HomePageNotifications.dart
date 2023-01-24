@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_image_slider/carousel.dart';
 
 class HomePageNotifications extends StatefulWidget{
   @override
@@ -11,7 +12,24 @@ class _HomePageNotificationsState extends State<HomePageNotifications> {
     // TODO: implement build
     return Scaffold(
       body: Center(
-        child: Text("notifications"),
+        child: Column(
+          children: [
+            SizedBox(height: 100,),
+            SizedBox(
+              height: 350,
+              child: Carousel(
+                  autoScroll: true,
+                  autoScrollDuration: Duration(seconds: 3),
+                  indicatorHeight: 8,
+                  indicatorBarColor: Colors.transparent,
+                  items : [
+                    Image.asset("assets/images/offer1.jpg",fit: BoxFit.cover),
+                    Image.asset("assets/images/offer2.jpg",fit: BoxFit.cover),
+                  ]
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:restaurant/HomePageNotifications.dart';
+import 'package:flutter_image_slider/carousel.dart';
 import 'package:restaurant/HomePageProfile.dart';
 import 'package:restaurant/loginpage.dart';
 
@@ -33,7 +33,7 @@ class _HomePageCenterState extends State<HomePageCenter> {
           ),
           child: Column(
             children: [
-            Container(height: 250, width: double.infinity,
+            Container(height: 225, width: double.infinity,
               alignment: AlignmentDirectional.bottomStart,
               padding: EdgeInsets.only(left: 20,top : 90),
               child: Column(
@@ -44,7 +44,23 @@ class _HomePageCenterState extends State<HomePageCenter> {
                   ],
               ),
             ),
-              Container(height: 150,),
+              SizedBox(
+                  height: 200,
+                child: Carousel(
+                  autoScroll: true,
+                  indicatorHeight: 8,
+
+                  autoScrollDuration: Duration(seconds: 3),
+                  indicatorBarColor: Colors.transparent,
+
+                  items : [
+                    Image.asset("assets/images/label1.jpg",fit: BoxFit.cover),
+                    Image.asset("assets/images/label2.jpg",fit: BoxFit.cover),
+                    Image.asset("assets/images/label3.jpg",fit: BoxFit.cover),
+                    Image.asset("assets/images/plate2.png",fit: BoxFit.cover),
+                  ]
+                ),
+              ),
             ],
           ),
         ),
