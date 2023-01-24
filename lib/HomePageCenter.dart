@@ -17,7 +17,7 @@ class _HomePageCenterState extends State<HomePageCenter> {
       drawer: NavigationDrawer(),
       body: Column(
         children: [
-        Container(height: 200, width: double.infinity,
+        Container(height: 205, width: double.infinity,
           decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage("assets/images/home1.png"), fit: BoxFit.cover,),),
