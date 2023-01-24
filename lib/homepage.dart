@@ -37,15 +37,15 @@ class _homepageState extends State<homepage> {
         selectedItemColor: Colors.deepPurple,
       ),
       body: new IndexedStack(
-        index: _selectedIndex,
-        children: <Widget>[
-          new HomePageCenter(),
-          new HomePageSearchPage(),
-          new HomePageNotifications(),
-          new HomePageProfile(),
-          //activity name
-        ],
-      ),
+          index: _selectedIndex,
+          children: <Widget>[
+            new HomePageCenter(),
+            new HomePageSearchPage(),
+            new HomePageNotifications(),
+            new HomePageProfile(),
+            //activity name
+          ],
+        ),
     );
   }
 }
