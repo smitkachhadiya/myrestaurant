@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+
 class HomePageCenter extends StatefulWidget {
   @override
   State<HomePageCenter> createState() => _HomePageCenterState();
@@ -10,7 +11,10 @@ class _HomePageCenterState extends State<HomePageCenter> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
+
     return Scaffold(
+      appBar: AppBar(),
+      drawer: NavigationDrawer(),
       body: Column(
         children: [
         Container(height: 200, width: double.infinity,
@@ -26,3 +30,11 @@ class _HomePageCenterState extends State<HomePageCenter> {
     );
   }
 }
+
+class NavigationDrawer extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) => Drawer(
+
+  );
+}
+
