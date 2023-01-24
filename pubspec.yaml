@@ -64,9 +64,9 @@ flutter:
   assets:
      - assets/images/home1.png
      - assets/images/img_1.png
-     - assets/images/label1.jpg
-     - assets/images/label2.jpg
-     - assets/images/label3.jpg
+     - assets/images/label1.png
+     - assets/images/label2.png
+     - assets/images/label3.png
      - assets/images/offer1.jpg
      - assets/images/offer2.jpg
      - assets/images/mainbg.png

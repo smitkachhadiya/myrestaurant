@@ -16,7 +16,7 @@ class _HomePageNotificationsState extends State<HomePageNotifications> {
           children: [
             SizedBox(height: 100,),
             SizedBox(
-              height: 350,
+              height: 370,
               child: Carousel(
                   autoScroll: true,
                   autoScrollDuration: Duration(seconds: 3),

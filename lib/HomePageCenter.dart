@@ -52,9 +52,9 @@ class _HomePageCenterState extends State<HomePageCenter> {
                   autoScrollDuration: Duration(seconds: 3),
                   indicatorBarColor: Colors.transparent,
                   items : [
-                    Image.asset("assets/images/label1.jpg",fit: BoxFit.cover),
-                    Image.asset("assets/images/label2.jpg",fit: BoxFit.cover),
-                    Image.asset("assets/images/label3.jpg",fit: BoxFit.cover),
+                    Image.asset("assets/images/label1.png",fit: BoxFit.cover),
+                    Image.asset("assets/images/label2.png",fit: BoxFit.cover),
+                    Image.asset("assets/images/label3.png",fit: BoxFit.cover),
                     Image.asset("assets/images/plate2.png",fit: BoxFit.cover),
                   ]
                 ),
