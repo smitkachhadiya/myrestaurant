@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:restaurant/subBurger01.dart';
 
 class HomePageSearchPage extends StatefulWidget{
   @override
@@ -20,6 +21,10 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
           elevation: 0,
           title: Text("Categories ",style: TextStyle(color: Colors.black)),
           bottom: TabBar(
+            indicator: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: Color(0xFFC9C7C1),
+            ),
             indicatorColor: Colors.deepPurple,
             labelPadding: EdgeInsets.only(left: 15,right: 15),
             unselectedLabelColor: Color(0xFFFFAC2F),
@@ -27,13 +32,13 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
             isScrollable: true,
             padding: EdgeInsets.zero,
             tabs: [
-              Tab(icon: Image(image: AssetImage("assets/images/iconburger.png"),height: 50),child: Text("Burger",style: TextStyle(fontSize: 10),),),
-              Tab(icon: Image(image: AssetImage("assets/images/iconpizza.png"),height: 50),child: Text("Pizza",style: TextStyle(fontSize: 10),),),
-              Tab(icon: Image(image: AssetImage("assets/images/iconsandwich.png"),height: 50),child: Text("Sandwich",style: TextStyle(fontSize: 10),),),
-              Tab(icon: Image(image: AssetImage("assets/images/iconnoodles.png"),height: 50),child: Text("Pasta",style: TextStyle(fontSize: 10),),),
-              Tab(icon: Image(image: AssetImage("assets/images/iconrice.png"),height: 50),child: Text("Rice",style: TextStyle(fontSize: 10),),),
-              Tab(icon: Image(image: AssetImage("assets/images/iconsweet.png"),height: 50),child: Text("Sweet",style: TextStyle(fontSize: 10),),),
-              Tab(icon: Image(image: AssetImage("assets/images/iconcolddrink.png"),height: 50),child: Text("Cold",style: TextStyle(fontSize: 10),),),
+              Tab(icon: Image(image: AssetImage("assets/images/iconburger.png"),height: 50,width: 50,),child: Text("Burger",style: TextStyle(fontSize: 10),),),
+              Tab(icon: Image(image: AssetImage("assets/images/iconpizza.png"),height: 50,width: 50,),child: Text("Pizza",style: TextStyle(fontSize: 10),),),
+              Tab(icon: Image(image: AssetImage("assets/images/iconsandwich.png"),height: 50,width: 50,),child: Text("Sandwich",style: TextStyle(fontSize: 10),),),
+              Tab(icon: Image(image: AssetImage("assets/images/iconnoodles.png"),height: 50,width: 50,),child: Text("Pasta",style: TextStyle(fontSize: 10),),),
+              Tab(icon: Image(image: AssetImage("assets/images/iconrice.png"),height: 50,width: 50,),child: Text("Rice",style: TextStyle(fontSize: 10),),),
+              Tab(icon: Image(image: AssetImage("assets/images/iconsweet.png"),height: 50,width: 50,),child: Text("Sweet",style: TextStyle(fontSize: 10),),),
+              Tab(icon: Image(image: AssetImage("assets/images/iconcolddrink.png"),height: 45,width: 50,),child: Text("Colddrinks",style: TextStyle(fontSize: 10),),),
             ],
           ),
         ),
@@ -42,78 +47,1254 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
             SingleChildScrollView(
                 child: Column(
                   children: [
-                    Container(height: 200,width: 500,color: Colors.lightGreen,child: Image(image: AssetImage("assets/images/iconcolddrink.png")),),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.blue,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.amberAccent,),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                  child: Row(
+                                    children: [
+                                      Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                      Padding(padding: EdgeInsets.only(left: 80)),
+                                      Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                      Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                    ],
+                                  ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
                   ],
             )),
             SingleChildScrollView(
                 child: Column(
                   children: [
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.blue,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.amberAccent,),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
                   ],
                 )),
             SingleChildScrollView(
                 child: Column(
                   children: [
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.blue,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.amberAccent,),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
                   ],
                 )),
             SingleChildScrollView(
                 child: Column(
                   children: [
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.blue,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.amberAccent,),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
                   ],
                 )),
             SingleChildScrollView(
                 child: Column(
                   children: [
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.blue,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.amberAccent,),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
                   ],
                 )),
             SingleChildScrollView(
                 child: Column(
                   children: [
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.blue,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.amberAccent,),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
                   ],
                 )),
             SingleChildScrollView(
                 child: Column(
                   children: [
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.blue,),
-                    Container(height: 200,color: Colors.lightGreen,),
-                    Container(height: 200,color: Colors.amberAccent,),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Padding(padding: EdgeInsets.only(left: 80)),
+                                    Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                    Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
                   ],
                 )),
           ],
