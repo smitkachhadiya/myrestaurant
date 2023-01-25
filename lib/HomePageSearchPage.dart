@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
 
 class HomePageSearchPage extends StatefulWidget{
   @override
@@ -11,41 +10,114 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Scaffold(
-      body: Column(
-        children: [
-          Padding(padding: EdgeInsets.only(top: 50)),
-          Container(
-            width: 400,
-            height: 675,
-            child: ContainedTabBarView(
-              tabs: [
-                Container(width: 40,child: Column(children: [Image(image: AssetImage("assets/images/img_1.png"),fit: BoxFit.cover,), Text("Burger",style: TextStyle(fontSize: 10),)],),),
-                Container(child: Column(children: [Icon(Icons.image), Text("data")],),),
-                Container(child: Column(children: [Icon(Icons.fastfood_outlined), Text("data")],),),
-                Container(child: Column(children: [Icon(Icons.image), Text("data")],),),
-                Container(child: Column(children: [Icon(Icons.fastfood_outlined), Text("data")],),),
-                Container(child: Column(children: [Icon(Icons.image), Text("data")],),),
-              ],
-              tabBarProperties: TabBarProperties(
-                width: 200,height: 50,
-                background: Container(
-                  decoration: BoxDecoration(color: Colors.transparent,),),
-                indicatorColor: Colors.blue,
-                labelColor: Color(0xFFFFAC2F),
-                unselectedLabelColor: Colors.blueGrey,
-              ),
-              views: [
-                Container(color: Colors.deepOrangeAccent,),
-                Container(color: Colors.lightGreen,),
-                Container(color: Colors.deepOrangeAccent,),
-                Container(color: Colors.lightGreen,),
-                Container(color: Colors.deepOrangeAccent,),
-                Container(color: Colors.lightGreen,),
+    return DefaultTabController(
+      length: 7,
+      child: Scaffold(
+        backgroundColor: Color(0xFFF8F8F9),
+        appBar: AppBar(
+          iconTheme: CupertinoIconThemeData(color: Colors.black),
+          backgroundColor: Color(0xFFF8F8F9),
+          elevation: 0,
+          title: Text("Categories ",style: TextStyle(color: Colors.black)),
+          bottom: TabBar(
+            indicatorColor: Colors.deepPurple,
+            labelPadding: EdgeInsets.only(left: 15,right: 15),
+            unselectedLabelColor: Color(0xFFFFAC2F),
+            labelColor: Colors.deepPurple,
+            isScrollable: true,
+            padding: EdgeInsets.zero,
+            tabs: [
+              Tab(icon: Image(image: AssetImage("assets/images/iconburger.png"),height: 50),child: Text("Burger",style: TextStyle(fontSize: 10),),),
+              Tab(icon: Image(image: AssetImage("assets/images/iconpizza.png"),height: 50),child: Text("Pizza",style: TextStyle(fontSize: 10),),),
+              Tab(icon: Image(image: AssetImage("assets/images/iconsandwich.png"),height: 50),child: Text("Sandwich",style: TextStyle(fontSize: 10),),),
+              Tab(icon: Image(image: AssetImage("assets/images/iconnoodles.png"),height: 50),child: Text("Pasta",style: TextStyle(fontSize: 10),),),
+              Tab(icon: Image(image: AssetImage("assets/images/iconrice.png"),height: 50),child: Text("Rice",style: TextStyle(fontSize: 10),),),
+              Tab(icon: Image(image: AssetImage("assets/images/iconsweet.png"),height: 50),child: Text("Sweet",style: TextStyle(fontSize: 10),),),
+              Tab(icon: Image(image: AssetImage("assets/images/iconcolddrink.png"),height: 50),child: Text("Cold",style: TextStyle(fontSize: 10),),),
             ],
-            ),
           ),
-        ]
+        ),
+        body: TabBarView(
+          children: [
+            SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(height: 200,width: 500,color: Colors.lightGreen,child: Image(image: AssetImage("assets/images/iconcolddrink.png")),),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.blue,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.amberAccent,),
+                  ],
+            )),
+            SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.blue,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.amberAccent,),
+                  ],
+                )),
+            SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.blue,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.amberAccent,),
+                  ],
+                )),
+            SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.blue,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.amberAccent,),
+                  ],
+                )),
+            SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.blue,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.amberAccent,),
+                  ],
+                )),
+            SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.blue,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.amberAccent,),
+                  ],
+                )),
+            SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.blue,),
+                    Container(height: 200,color: Colors.lightGreen,),
+                    Container(height: 200,color: Colors.amberAccent,),
+                  ],
+                )),
+          ],
+        ),
       ),
     );
   }

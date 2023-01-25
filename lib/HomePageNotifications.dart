@@ -25,6 +25,7 @@ class _HomePageNotificationsState extends State<HomePageNotifications> {
                   items : [
                     Image.asset("assets/images/offer1.jpg",fit: BoxFit.cover),
                     Image.asset("assets/images/offer2.jpg",fit: BoxFit.cover),
+                    Image.asset("assets/images/offer3.jpg",fit: BoxFit.cover),
                   ]
               ),
             ),
