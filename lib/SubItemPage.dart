@@ -11,6 +11,27 @@ class SubItemPage extends StatefulWidget{
 }
 
 class _SubItemPageState extends State<SubItemPage> {
+  int count = 0;
+  int m = 0;
+
+  void increment(s){
+    m = s;
+    setState(() {
+      if(count<10){
+        count++;
+        m = m * count;
+      }
+    });
+  }
+  void decrement(s){
+    setState(() {
+       m = s;
+      if(count>=2){
+        count--;
+        m = m * count;
+      }
+    });
+  }
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -28,13 +49,13 @@ class _SubItemPageState extends State<SubItemPage> {
         child: Column(
           children: [
             Container(height: 300,),
-            SingleChildScrollView(
-              child: Container(height: 483,width: 360,
-                  decoration: BoxDecoration(
-                    color: Color(0xFFF8F8F9),
-                    borderRadius:BorderRadiusDirectional.circular(50),),
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 15,left: 50,right: 40),
+            Container(height: 483,width: 360,
+                decoration: BoxDecoration(
+                  color: Color(0xFFF8F8F9),
+                  borderRadius:BorderRadiusDirectional.circular(50),),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 15,left: 50,right: 40),
+                  child: SingleChildScrollView(
                     child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(padding: const EdgeInsets.only(top: 15.0,left: 30,bottom: 30),
@@ -71,9 +92,47 @@ class _SubItemPageState extends State<SubItemPage> {
                         Padding(padding: const EdgeInsets.only(top: 15,bottom: 10),
                           child: Text("Pricing : ",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20,)),),
 
-
-
-
+                        Row(
+                          children: [
+                          Row(
+                              children: [
+                                Container(margin: EdgeInsets.all(1),height: 35,width: 35,
+                                  child: FloatingActionButton(
+                                    onPressed: (){decrement(widget.Data["price"]);},
+                                    splashColor: Colors.blueGrey,
+                                    backgroundColor: Colors.orange,
+                                    child: Icon(Icons.remove,color: Colors.black,),),
+                                ),
+                              ],
+                            ),
+                            Row(children: [
+                                Container(
+                                  margin: EdgeInsets.all(1),
+                                  child: Center(child: Text(" $count ",style: TextStyle(fontSize: 20,color: Colors.black),),),)
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Container(
+                                  margin: EdgeInsets.all(1),height: 35,width: 35,
+                                  child: FloatingActionButton(
+                                    onPressed:  (){increment(widget.Data["price"]);},
+                                    splashColor: Colors.blueGrey,
+                                    backgroundColor: Colors.orange,
+                                    child: Icon(Icons.add,color: Colors.black,),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(left: 50),
+                              child: Text("Total : ",style: TextStyle(fontSize: 20,color: Colors.black),),
+                            ),
+                            Container(
+                              child: Text(" $m  ",style: TextStyle(fontSize: 20,color: Colors.black),),
+                            ),
+                          ],
+                        ),
                         Padding(padding: const EdgeInsets.only(top: 20),
                           child: Container(width: 300,decoration: BoxDecoration(color: Color(0xFFFFAC2F),borderRadius: BorderRadius.circular(30)),
                             child: TextButton(onPressed: () {},
@@ -83,8 +142,8 @@ class _SubItemPageState extends State<SubItemPage> {
                         )
                       ],
                     ),
-                  )
-              ),
+                  ),
+                )
             ),
           ],
         ),

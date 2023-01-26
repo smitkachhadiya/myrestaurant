@@ -14,7 +14,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
     "title": "Potato corn burger",
     "image": 'assets/images/imagesburger/bgsubburger2.png',
-    "price": "320",
+    "price": 320,
     "info": "The comfort of potato and the crunch of corn in one thick pattie. Topped off with lettuce, tomatoes, gherkins and served with hot chips.",
     "star": "4.6",
     "likes": "1056",
@@ -26,7 +26,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "Stuffed Bean Burger",
       "image": 'assets/images/imagesburger/bgsubburger3.png',
-      "price": "200",
+      "price": 200,
       "info": "Being a vegetarian is no reason to deny yourself the gluttonous pleasures of an overstuffed bun. Try this bean burger with a chipotle chilli and a dash of lime.",
       "star": "4.3",
       "likes": "656",
@@ -38,7 +38,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "Ultimate veg burger with carrot slaw",
       "image": 'assets/images/imagesburger/bgsubburger1.png',
-      "price": "280",
+      "price": 280,
       "info": "A low-fat veggie burger made with sweet potato, quinoa and mushrooms - a change from the standard vegetarian bean burger - make your barbecue menu stand out!",
       "star": "4.6",
       "likes": "956",
@@ -50,7 +50,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "Smoked tofu vegan burger",
       "image": 'assets/images/imagesburger/bgsubburger4.png',
-      "price": "240",
+      "price": 240,
       "info": "Pack a flavour punch with this vegan sweet potato, cashew and tofu burger. It takes a little effort, but it's well worth the prep time once you taste it",
       "star": "4.5",
       "likes": "620",
@@ -62,7 +62,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "Chickpea & coriander burgers",
       "image": 'assets/images/imagesburger/bgsubburger6.png',
-      "price": "350",
+      "price": 350,
       "info": "These healthy, falafel-inspired chickpea & coriander burgers are an easy storecupboard supper. Whizz everything together in your food processor then top with punchy red onion and chilli sauce for a hearty veggie main.",
       "star": "4.8",
       "likes": "982",
@@ -74,7 +74,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "Pulled BBQ & black bean burgers",
       "image": 'assets/images/imagesburger/bgsubburger5.png',
-      "price": "280",
+      "price": 280,
       "info": "Get the kids to help you prep the veg for these family-friendly burgers. These veggie buns have all the comforting textures of meat but are completely vegan.",
       "star": "4.6",
       "likes": "830",
@@ -86,7 +86,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "Cheese Pizza",
       "image": 'assets/images/imagespizza/bgsubpizza1.png',
-      "price": "550",
+      "price": 550,
       "info": "It is baked by adding the cheese as topping over it. The base is perfectly prepared by adding single layer of cheese over it. It is mouth-watering pizza for cheese lovers.",
       "star": "4.6",
       "likes": "853",
@@ -98,7 +98,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "Pepperoni Pizza",
       "image": 'assets/images/imagespizza/bgsubpizza2.png',
-      "price": "450",
+      "price": 450,
       "info": "There’s a reason this is one of the most popular types of pizza. Who doesn’t love biting into a crispy, salty round of pepperoni?",
       "star": "4.3",
       "likes": "985",
@@ -110,7 +110,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "BBQ Pizza",
       "image": 'assets/images/imagespizza/bgsubpizza3.png',
-      "price": "600",
+      "price": 600,
       "info": "If you love BBQ and you love pizza, why not put them together? The topping over the top of a pie gives it a tangy, sweet flavor that can’t be beaten.",
       "star": "4.7",
       "likes": "963",
@@ -122,7 +122,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "Supreme Pizza",
       "image": 'assets/images/imagespizza/bgsubpizza4.png',
-      "price": "660",
+      "price": 660,
       "info": "The “supreme” refers to the litany of toppings that come scattered on these pies, from sausage to vegetables to pepperoni. And it’s the combination of the flavors that really makes it sing.",
       "star": "4.6",
       "likes": "756",
@@ -134,7 +134,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "The Works Pizza",
       "image": 'assets/images/imagespizza/bgsubpizza5.png',
-      "price": "580",
+      "price": 580,
       "info": "The “works” usually involves a wide variety of veggie toppings including onions, olives, and mushrooms, plus bacon and pepperoni.",
       "star": "4.2",
       "likes": "426",
@@ -146,7 +146,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "Margherita Pizza",
       "image": 'assets/images/imagespizza/bgsubpizza6.png',
-      "price": "410",
+      "price": 410,
       "info": "Deceptively simple, the Margherita pizza is made with basil, fresh mozzarella, and tomatoes. There’s a reason it’s an Italian staple and one of the most popular types of pizza in the country.",
       "star": "4.4",
       "likes": "1156",
@@ -158,7 +158,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "Ultimate rainbow vegetable sandwich ",
       "image": 'assets/images/imagessandwich/bgsubsandwich1.png',
-      "price": "280",
+      "price": 280,
       "info": "it’s full of flavor from an incredible herbed goat cheese spread and tangy pickled radishes. The bell peppers are broiled simply, and a vibrant combination with the other veggies!",
       "star": "4.1",
       "likes": "630",
@@ -170,7 +170,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "Chickpea Salad Sandwich",
       "image": 'assets/images/imagessandwich/bgsubsandwich2.png',
-      "price": "300",
+      "price": 300,
       "info": "A vegetarian riff on a classic chicken salad sandwich, this chickpea version is very lunch-friendly.",
       "star": "4.3",
       "likes": "562",
@@ -182,7 +182,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "Ultimate Falafel Sandwich",
       "image": 'assets/images/imagessandwich/bgsubsandwich3.png',
-      "price": "240",
+      "price": 240,
       "info": "It features crunchy fritters, ultra soft flatbread, crunchy veggies and creamy, garlicky sauces...it’s pretty much the ultimate sandwich.",
       "star": "4.5",
       "likes": "286",
@@ -194,7 +194,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "grilled cheese with tomatoes",
       "image": 'assets/images/imagessandwich/bgsubsandwich4.png',
-      "price": "380",
+      "price": 380,
       "info": "The combination of the savory tomatoes, silky mayonnaise and fresh basil on crunchy grilled bread is a little bit of heaven. ",
       "star": "4.4",
       "likes": "548",
@@ -206,7 +206,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "Coleslaw & Swiss Melt Sandwich",
       "image": 'assets/images/imagessandwich/bgsubsandwich5.png',
-      "price": "200",
+      "price": 200,
       "info": " Added the melty cheese on top of a salty pretzel bun. What puts it over the edge is secret sauce: Russian dressing, the star ingredient in a Reuben sandwich.",
       "star": "4.2",
       "likes": "539",
@@ -218,7 +218,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "Caramelized Onion and Sour Cherry Tartine",
       "image": 'assets/images/imagessandwich/bgsubsandwich6.png',
-      "price": "360",
+      "price": 360,
       "info": "This tasty tartine combines sour cherries with tender caramelized onions, sharp white cheddar cheese, and fresh thyme leaves. To turn it into a mouthwatering melty grilled cheese, simply sandwich two tartines together. ",
       "star": "4.4",
       "likes": "758",
