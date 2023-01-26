@@ -75,6 +75,7 @@ class _loginpageState extends State<loginpage> {
                           onPressed: () {
                             Navigator.push(context,
                                 MaterialPageRoute(builder: (context) => homepage()));},
+                          heroTag: "btn1",
                           splashColor: Colors.blueGrey,
                           backgroundColor: Color(0xFFFFAC2F),
                           label: Text("Login ", style: TextStyle(color: Colors.white, fontSize: 20)),
@@ -96,6 +97,7 @@ class _loginpageState extends State<loginpage> {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) => register()));
                             },
+                            heroTag: "btn2",
                             splashColor: Colors.blueGrey,
                             backgroundColor: Color(0xFFFFAC2F),
                             label: Text("Sign up ",style: TextStyle(color: Colors.white, fontSize: 20)),

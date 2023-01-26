@@ -98,6 +98,7 @@ class _SubItemPageState extends State<SubItemPage> {
                               children: [
                                   Container(margin: EdgeInsets.all(1),height: 35,width: 35,
                                     child: FloatingActionButton(
+                                      heroTag: "btn102",
                                       onPressed: (){decrement(widget.Data["price"]);},
                                       splashColor: Colors.blueGrey,
                                       backgroundColor: Colors.orange,
@@ -115,16 +116,14 @@ class _SubItemPageState extends State<SubItemPage> {
                                   Container(
                                     margin: EdgeInsets.all(1),height: 35,width: 35,
                                     child: FloatingActionButton(
-                                      onPressed:  (){increment(widget.Data["price"]);},
+                                      heroTag: "btn101",
+                                      onPressed: (){increment(widget.Data["price"]);},
                                       splashColor: Colors.blueGrey,
                                       backgroundColor: Colors.orange,
                                       child: Icon(Icons.add,color: Colors.black,),
                                     ),
                                   ),
                                 ],
-                              ),
-                              Container(
-
                               ),
                               Container(
                                 margin: EdgeInsets.only(left: 40),
@@ -139,9 +138,9 @@ class _SubItemPageState extends State<SubItemPage> {
                             child: Container(width: 300,decoration: BoxDecoration(color: Color(0xFFFFAC2F),borderRadius: BorderRadius.circular(30)),
                               child: FloatingActionButton.extended(onPressed: () {},
                                 backgroundColor: Colors.orange,
+                                heroTag: "btn103",
                                 splashColor: Colors.blueGrey,
                                 label: Text("ORDER", style: TextStyle(color: Colors.white,fontSize: 20),),
-
                               ),
                             ),
                           ),
