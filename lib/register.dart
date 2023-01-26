@@ -4,7 +4,6 @@ import 'package:intl/intl.dart';
 import 'package:restaurant/loginpage.dart';
 
 class register extends StatefulWidget {
-  const register({super.key});
   @override
   State<register> createState() => _registerState();
 }
