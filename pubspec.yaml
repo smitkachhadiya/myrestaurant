@@ -65,9 +65,18 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - assets/images/imagesburger/bg2.png
-     - assets/images/imagesburger/bg3.png
+     - assets/images/imagesburger/bgburger1.png
+     - assets/images/imagesburger/bgburger2.png
+     - assets/images/imagesburger/bgburger3.png
+     - assets/images/imagesburger/bgburger4.png
+     - assets/images/imagesburger/bgburger5.png
+     - assets/images/imagesburger/bgburger6.png
+     - assets/images/imagesburger/bgsubburger1.png
      - assets/images/imagesburger/bgsubburger2.png
+     - assets/images/imagesburger/bgsubburger3.png
+     - assets/images/imagesburger/bgsubburger4.png
+     - assets/images/imagesburger/bgsubburger5.png
+     - assets/images/imagesburger/bgsubburger6.png
      - assets/images/iconburger.png
      - assets/images/iconcolddrink.png
      - assets/images/iconnoodles.png
