@@ -64,7 +64,7 @@ class _subBurger01State extends State<subBurger01> {
                           child: Text("120g.",style: TextStyle(fontSize: 18),),),
                       ],),),],),
                     Padding(padding: const EdgeInsets.only(top: 15,bottom: 10),
-                      child: Text("Pricing : ",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 15,)),),
+                      child: Text("Pricing : ",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20,)),),
 
 
                     Padding(padding: const EdgeInsets.only(top: 20),
