@@ -14,9 +14,9 @@ class splashScreen extends StatelessWidget{
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
         splash: Scaffold(
-          backgroundColor: Color(0xFFF8F8F9),
+          backgroundColor: Colors.white,
           body: Center(
-            child: LoadingAnimationWidget.staggeredDotsWave(color: Colors.black, size: 100),
+            child: LoadingAnimationWidget.fourRotatingDots(color: Colors.black, size: 100),
           ),
         ),
         nextScreen: loginpage());
