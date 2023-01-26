@@ -40,7 +40,6 @@ class _loginpageState extends State<loginpage> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Enter your details here :-"),
                       Padding(padding: EdgeInsets.only(top: 15)),
                       TextField(
                         decoration: InputDecoration(
@@ -72,19 +71,13 @@ class _loginpageState extends State<loginpage> {
                       Padding(padding: const EdgeInsets.all(30)),
                       Container(
                         width: 300,
-                        decoration: BoxDecoration(
-                            color: Color(0xFFFFAC2F),
-                            borderRadius: BorderRadius.circular(30)),
-                        child: TextButton(
+                        child: FloatingActionButton.extended(
                           onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => homepage()));
-                          },
-                          child: Text("Login ",
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 20)),
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => homepage()));},
+                          splashColor: Colors.blueGrey,
+                          backgroundColor: Color(0xFFFFAC2F),
+                          label: Text("Login ", style: TextStyle(color: Colors.white, fontSize: 20)),
                         ),
                       ),
                       Padding(padding: EdgeInsets.all(20)),
@@ -98,19 +91,14 @@ class _loginpageState extends State<loginpage> {
                       SizedBox(
                         child: Container(
                           width: 300,
-                          decoration: BoxDecoration(
-                              color: Color(0xFFFFAC2F),
-                              borderRadius: BorderRadius.circular(30)),
-                          child: TextButton(
+                          child: FloatingActionButton.extended(
                             onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => register()));
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (context) => register()));
                             },
-                            child: Text("Sign up ",
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20)),
+                            splashColor: Colors.blueGrey,
+                            backgroundColor: Color(0xFFFFAC2F),
+                            label: Text("Sign up ",style: TextStyle(color: Colors.white, fontSize: 20)),
                           ),
                         ),
                       ),
