@@ -158,74 +158,74 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
     {
       "title": "Ultimate rainbow vegetable sandwich ",
       "image": 'assets/images/imagessandwich/bgsubsandwich1.png',
-      "price": "410",
+      "price": "280",
       "info": "it’s full of flavor from an incredible herbed goat cheese spread and tangy pickled radishes. The bell peppers are broiled simply, and a vibrant combination with the other veggies!",
-      "star": "4.4",
-      "likes": "1156",
-      "mes": "363",
-      "time": "50m",
-      "cal": "520cal",
-      "gram": "180g"
+      "star": "4.1",
+      "likes": "630",
+      "mes": "358",
+      "time": "20m",
+      "cal": "458cal",
+      "gram": "110g"
     },
     {
       "title": "Chickpea Salad Sandwich",
       "image": 'assets/images/imagessandwich/bgsubsandwich2.png',
-      "price": "410",
+      "price": "300",
       "info": "A vegetarian riff on a classic chicken salad sandwich, this chickpea version is very lunch-friendly.",
-      "star": "4.4",
-      "likes": "1156",
-      "mes": "363",
-      "time": "50m",
-      "cal": "520cal",
-      "gram": "180g"
+      "star": "4.3",
+      "likes": "562",
+      "mes": "176",
+      "time": "30m",
+      "cal": "546cal",
+      "gram": "124g"
     },
     {
       "title": "Ultimate Falafel Sandwich",
       "image": 'assets/images/imagessandwich/bgsubsandwich3.png',
-      "price": "410",
+      "price": "240",
       "info": "It features crunchy fritters, ultra soft flatbread, crunchy veggies and creamy, garlicky sauces...it’s pretty much the ultimate sandwich.",
-      "star": "4.4",
-      "likes": "1156",
-      "mes": "363",
+      "star": "4.5",
+      "likes": "286",
+      "mes": "135",
       "time": "50m",
-      "cal": "520cal",
-      "gram": "180g"
+      "cal": "352cal",
+      "gram": "168g"
     },
     {
       "title": "grilled cheese with tomatoes",
       "image": 'assets/images/imagessandwich/bgsubsandwich4.png',
-      "price": "410",
+      "price": "380",
       "info": "The combination of the savory tomatoes, silky mayonnaise and fresh basil on crunchy grilled bread is a little bit of heaven. ",
       "star": "4.4",
-      "likes": "1156",
-      "mes": "363",
-      "time": "50m",
-      "cal": "520cal",
-      "gram": "180g"
+      "likes": "548",
+      "mes": "109",
+      "time": "20m",
+      "cal": "562cal",
+      "gram": "182g"
     },
     {
       "title": "Coleslaw & Swiss Melt Sandwich",
       "image": 'assets/images/imagessandwich/bgsubsandwich5.png',
-      "price": "410",
+      "price": "200",
       "info": " Added the melty cheese on top of a salty pretzel bun. What puts it over the edge is secret sauce: Russian dressing, the star ingredient in a Reuben sandwich.",
-      "star": "4.4",
-      "likes": "1156",
-      "mes": "363",
-      "time": "50m",
-      "cal": "520cal",
-      "gram": "180g"
+      "star": "4.2",
+      "likes": "539",
+      "mes": "345",
+      "time": "45m",
+      "cal": "350cal",
+      "gram": "110g"
     },
     {
       "title": "Caramelized Onion and Sour Cherry Tartine",
       "image": 'assets/images/imagessandwich/bgsubsandwich6.png',
-      "price": "410",
+      "price": "360",
       "info": "This tasty tartine combines sour cherries with tender caramelized onions, sharp white cheddar cheese, and fresh thyme leaves. To turn it into a mouthwatering melty grilled cheese, simply sandwich two tartines together. ",
       "star": "4.4",
-      "likes": "1156",
-      "mes": "363",
-      "time": "50m",
-      "cal": "520cal",
-      "gram": "180g"
+      "likes": "758",
+      "mes": "261",
+      "time": "20m",
+      "cal": "263cal",
+      "gram": "90g"
     },
   ];
 
@@ -760,7 +760,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                                       children: [
                                         Text("Ultimate rainbow vegetable sandwich ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("280₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
@@ -798,7 +798,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                                       children: [
                                         Text("Chickpea Salad Sandwich",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("300₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
@@ -836,7 +836,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                                       children: [
                                         Text("Ultimate Falafel Sandwich",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("240₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
@@ -874,7 +874,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                                       children: [
                                         Text("grilled cheese with tomatoes",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("380₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
@@ -912,7 +912,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                                       children: [
                                         Text("Coleslaw & Swiss Melt Sandwich",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("200₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
@@ -950,7 +950,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                                       children: [
                                         Text("Caramelized Onion and Sour Cherry \nTartine",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("360₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
