@@ -572,6 +572,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                                       children: [Padding(
                                           padding: const EdgeInsets.only(left: 130),
                                           child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
+
                                       ],
                                     )
                                   ],
