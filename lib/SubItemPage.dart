@@ -15,14 +15,15 @@ class _SubItemPageState extends State<SubItemPage> {
   int m = 0;
 
   void increment(s){
-    m = s;
     setState(() {
       if(count<10){
+        m = s;
         count++;
         m = m * count;
       }
     });
   }
+
   void decrement(s){
     setState(() {
        m = s;
@@ -121,6 +122,9 @@ class _SubItemPageState extends State<SubItemPage> {
                                     ),
                                   ),
                                 ],
+                              ),
+                              Container(
+
                               ),
                               Container(
                                 margin: EdgeInsets.only(left: 40),
