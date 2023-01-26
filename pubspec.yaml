@@ -89,6 +89,18 @@ flutter:
      - assets/images/imagespizza/bgsubpizza4.png
      - assets/images/imagespizza/bgsubpizza5.png
      - assets/images/imagespizza/bgsubpizza6.png
+     - assets/images/imagessandwich/bgsandwich1.png
+     - assets/images/imagessandwich/bgsandwich2.png
+     - assets/images/imagessandwich/bgsandwich3.png
+     - assets/images/imagessandwich/bgsandwich4.png
+     - assets/images/imagessandwich/bgsandwich5.png
+     - assets/images/imagessandwich/bgsandwich6.png
+     - assets/images/imagessandwich/bgsubsandwich1.png
+     - assets/images/imagessandwich/bgsubsandwich2.png
+     - assets/images/imagessandwich/bgsubsandwich3.png
+     - assets/images/imagessandwich/bgsubsandwich4.png
+     - assets/images/imagessandwich/bgsubsandwich5.png
+     - assets/images/imagessandwich/bgsubsandwich6.png
      - assets/images/iconburger.png
      - assets/images/iconcolddrink.png
      - assets/images/iconnoodles.png
