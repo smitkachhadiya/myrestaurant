@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class demoSubBurgerPage extends StatelessWidget{
+class SubItemPage extends StatelessWidget{
 
   Map Data;
-  demoSubBurgerPage(this.Data);
+  SubItemPage(this.Data);
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

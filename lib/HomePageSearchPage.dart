@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:restaurant/demoSubBurgerPage.dart';
+import 'package:restaurant/SubItemPage.dart';
 import 'package:restaurant/subBurger01.dart';
 
 class HomePageSearchPage extends StatefulWidget{
@@ -10,77 +10,150 @@ class HomePageSearchPage extends StatefulWidget{
 
 class _HomePageSearchPageState extends State<HomePageSearchPage> {
 
-  List<Map> Data = [{
+  List<Map> Data = [
+    {
     "title": "Potato corn burger",
     "image": 'assets/images/imagesburger/bgsubburger2.png',
-    "price": "201",
+    "price": "320",
     "info": "The comfort of potato and the crunch of corn in one thick pattie. Topped off with lettuce, tomatoes, gherkins and served with hot chips.",
     "star": "4.6",
     "likes": "1056",
     "mes": "403",
     "time": "60m",
-    "cal": "180cal",
+    "cal": "340cal",
     "gram": "110g"
     },
     {
       "title": "Stuffed Bean Burger",
       "image": 'assets/images/imagesburger/bgsubburger3.png',
-      "price": "201",
-      "info": "The comfort of potato and the crunch of corn in one thick pattie. Topped off with lettuce, tomatoes, gherkins and served with hot chips.",
-      "star": "3.2",
+      "price": "200",
+      "info": "Being a vegetarian is no reason to deny yourself the gluttonous pleasures of an overstuffed bun. Try this bean burger with a chipotle chilli and a dash of lime.",
+      "star": "4.3",
       "likes": "656",
       "mes": "218",
       "time": "50m",
-      "cal": "190cal",
+      "cal": "290cal",
       "gram": "140g"
     },
     {
       "title": "Ultimate veg burger with carrot slaw",
       "image": 'assets/images/imagesburger/bgsubburger1.png',
-      "price": "201",
-      "info": "The comfort of potato and the crunch of corn in one thick pattie. Topped off with lettuce, tomatoes, gherkins and served with hot chips.",
+      "price": "280",
+      "info": "A low-fat veggie burger made with sweet potato, quinoa and mushrooms - a change from the standard vegetarian bean burger - make your barbecue menu stand out!",
       "star": "4.6",
-      "likes": "1056",
+      "likes": "956",
       "mes": "403",
       "time": "60m",
-      "cal": "180cal",
+      "cal": "310cal",
       "gram": "110g"
     },
     {
       "title": "Smoked tofu vegan burger",
       "image": 'assets/images/imagesburger/bgsubburger4.png',
-      "price": "201",
-      "info": "The comfort of potato and the crunch of corn in one thick pattie. Topped off with lettuce, tomatoes, gherkins and served with hot chips.",
-      "star": "4.6",
-      "likes": "1056",
-      "mes": "403",
-      "time": "60m",
-      "cal": "180cal",
-      "gram": "110g"
+      "price": "240",
+      "info": "Pack a flavour punch with this vegan sweet potato, cashew and tofu burger. It takes a little effort, but it's well worth the prep time once you taste it",
+      "star": "4.5",
+      "likes": "620",
+      "mes": "218",
+      "time": "35m",
+      "cal": "865cal",
+      "gram": "180g"
     },
     {
       "title": "Chickpea & coriander burgers",
       "image": 'assets/images/imagesburger/bgsubburger6.png',
-      "price": "201",
-      "info": "The comfort of potato and the crunch of corn in one thick pattie. Topped off with lettuce, tomatoes, gherkins and served with hot chips.",
-      "star": "4.6",
-      "likes": "1056",
-      "mes": "403",
-      "time": "60m",
-      "cal": "180cal",
-      "gram": "110g"
+      "price": "350",
+      "info": "These healthy, falafel-inspired chickpea & coriander burgers are an easy storecupboard supper. Whizz everything together in your food processor then top with punchy red onion and chilli sauce for a hearty veggie main.",
+      "star": "4.8",
+      "likes": "982",
+      "mes": "612",
+      "time": "20m",
+      "cal": "344cal",
+      "gram": "100g"
     },
     {
       "title": "Pulled BBQ & black bean burgers",
       "image": 'assets/images/imagesburger/bgsubburger5.png',
-      "price": "201",
-      "info": "The comfort of potato and the crunch of corn in one thick pattie. Topped off with lettuce, tomatoes, gherkins and served with hot chips.",
+      "price": "280",
+      "info": "Get the kids to help you prep the veg for these family-friendly burgers. These veggie buns have all the comforting textures of meat but are completely vegan.",
       "star": "4.6",
-      "likes": "1056",
+      "likes": "830",
       "mes": "403",
+      "time": "45m",
+      "cal": "439cal",
+      "gram": "180g"
+    },
+    {
+      "title": "Cheese Pizza",
+      "image": 'assets/images/imagespizza/bgsubpizza1.png',
+      "price": "550",
+      "info": "It is baked by adding the cheese as topping over it. The base is perfectly prepared by adding single layer of cheese over it. It is mouth-watering pizza for cheese lovers.",
+      "star": "4.6",
+      "likes": "853",
+      "mes": "352",
       "time": "60m",
-      "cal": "180cal",
-      "gram": "110g"
+      "cal": "440cal",
+      "gram": "210g"
+    },
+    {
+      "title": "Pepperoni Pizza",
+      "image": 'assets/images/imagespizza/bgsubpizza2.png',
+      "price": "450",
+      "info": "There’s a reason this is one of the most popular types of pizza. Who doesn’t love biting into a crispy, salty round of pepperoni?",
+      "star": "4.3",
+      "likes": "985",
+      "mes": "256",
+      "time": "50m",
+      "cal": "460cal",
+      "gram": "190g"
+    },
+    {
+      "title": "BBQ Pizza",
+      "image": 'assets/images/imagespizza/bgsubpizza3.png',
+      "price": "600",
+      "info": "If you love BBQ and you love pizza, why not put them together? The topping over the top of a pie gives it a tangy, sweet flavor that can’t be beaten.",
+      "star": "4.7",
+      "likes": "963",
+      "mes": "612",
+      "time": "90m",
+      "cal": "680cal",
+      "gram": "250g"
+    },
+    {
+      "title": "Supreme Pizza",
+      "image": 'assets/images/imagespizza/bgsubpizza4.png',
+      "price": "660",
+      "info": "The “supreme” refers to the litany of toppings that come scattered on these pies, from sausage to vegetables to pepperoni. And it’s the combination of the flavors that really makes it sing.",
+      "star": "4.6",
+      "likes": "756",
+      "mes": "327",
+      "time": "80m",
+      "cal": "582cal",
+      "gram": "240g"
+    },
+    {
+      "title": "The Works Pizza",
+      "image": 'assets/images/imagespizza/bgsubpizza5.png',
+      "price": "580",
+      "info": "The “works” usually involves a wide variety of veggie toppings including onions, olives, and mushrooms, plus bacon and pepperoni.",
+      "star": "4.2",
+      "likes": "426",
+      "mes": "125",
+      "time": "55m",
+      "cal": "468cal",
+      "gram": "175g"
+    },
+    {
+      "title": "Margherita Pizza",
+      "image": 'assets/images/imagespizza/bgsubpizza6.png',
+      "price": "410",
+      "info": "Deceptively simple, the Margherita pizza is made with basil, fresh mozzarella, and tomatoes. There’s a reason it’s an Italian staple and one of the most popular types of pizza in the country.",
+      "star": "4.4",
+      "likes": "1156",
+      "mes": "363",
+      "time": "50m",
+      "cal": "520cal",
+      "gram": "180g"
     },
   ];
 
@@ -120,13 +193,13 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
         ),
         body: TabBarView(
           children: [
-            SingleChildScrollView(
+            SingleChildScrollView(       // Burger
                 child: Column(
                   children: [
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => demoSubBurgerPage(Data[0])));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[0])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -164,7 +237,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => demoSubBurgerPage(Data[1])));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[1])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -202,7 +275,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => demoSubBurgerPage(Data[2])));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[2])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -240,7 +313,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => demoSubBurgerPage(Data[3])));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[3])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -262,7 +335,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                                       children: [
                                         Text("Smoked tofu vegan burger ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("350₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("240₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
@@ -278,7 +351,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => demoSubBurgerPage(Data[4])));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[4])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -317,7 +390,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => demoSubBurgerPage(Data[5])));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[5])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -339,7 +412,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                                       children: [
                                         Text("Pulled BBQ & black bean burgers ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("430₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("280₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
@@ -354,7 +427,240 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                             ],),),),),
                   ],
             )),
-            SingleChildScrollView(
+            SingleChildScrollView(       // Pizza
+                child: Column(
+                  children: [
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[6])));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagespizza/bgpizza1.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text("Cheese Pizza ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Padding(padding: EdgeInsets.only(top: 5)),
+                                        Text("550₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                      ],
+                                    ),
+                                    Column(mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [Padding(
+                                          padding: const EdgeInsets.only(left: 150),
+                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[7])));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagespizza/bgpizza2.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text("Pepperoni Pizza ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Padding(padding: EdgeInsets.only(top: 5)),
+                                        Text("450₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                      ],
+                                    ),
+                                    Column(mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [Padding(
+                                          padding: const EdgeInsets.only(left: 130),
+                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[8])));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagespizza/bgpizza3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text("BBQ Pizza ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Padding(padding: EdgeInsets.only(top: 5)),
+                                        Text("600₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                      ],
+                                    ),
+                                    Column(mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [Padding(
+                                          padding: const EdgeInsets.only(left: 170),
+                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[9])));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagespizza/bgpizza4.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text("Supreme Pizza",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Padding(padding: EdgeInsets.only(top: 5)),
+                                        Text("660₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                      ],
+                                    ),
+                                    Column(mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [Padding(
+                                          padding: const EdgeInsets.only(left: 140),
+                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[10])));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagespizza/bgpizza5.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text("The Works Pizza",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Padding(padding: EdgeInsets.only(top: 5)),
+                                        Text("580₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                      ],
+                                    ),
+                                    Column(mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [Padding(
+                                          padding: const EdgeInsets.only(left: 130),
+                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[11])));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagespizza/bgpizza6.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text("Margherita Pizza ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Padding(padding: EdgeInsets.only(top: 5)),
+                                        Text("410₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                      ],
+                                    ),
+                                    Column(mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [Padding(
+                                          padding: const EdgeInsets.only(left: 120),
+                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                  ],
+                )),
+            SingleChildScrollView(       //Sandwich
                 child: Column(
                   children: [
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
@@ -587,7 +893,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                             ],),),),),
                   ],
                 )),
-            SingleChildScrollView(
+            SingleChildScrollView(       // Pasta
                 child: Column(
                   children: [
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
@@ -820,7 +1126,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                             ],),),),),
                   ],
                 )),
-            SingleChildScrollView(
+            SingleChildScrollView(       // Rice
                 child: Column(
                   children: [
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
@@ -1053,7 +1359,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                             ],),),),),
                   ],
                 )),
-            SingleChildScrollView(
+            SingleChildScrollView(       // Sweet
                 child: Column(
                   children: [
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
@@ -1286,240 +1592,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                             ],),),),),
                   ],
                 )),
-            SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                  ],
-                )),
-            SingleChildScrollView(
+            SingleChildScrollView(       // Drinks
                 child: Column(
                   children: [
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
