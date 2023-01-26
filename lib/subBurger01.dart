@@ -18,7 +18,7 @@ class _subBurger01State extends State<subBurger01> {
       extendBodyBehindAppBar: true,
       body: DecoratedBox(
         decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.fitHeight)
+          image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgsubburger2.png"),fit: BoxFit.fitHeight)
         ),
         child: Column(
           children: [

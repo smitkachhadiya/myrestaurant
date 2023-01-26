@@ -31,7 +31,7 @@ class _HomePageCenterState extends State<HomePageCenter> {
             decoration: BoxDecoration(
               image: DecorationImage(
                   image: AssetImage("assets/images/mainbg.png",),
-                  fit: BoxFit.fitHeight),
+                  fit: BoxFit.cover),
             ),
             child: Column(
               children: [
