@@ -63,15 +63,24 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
                                 child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg3.png"),fit: BoxFit.cover)
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bg2.png"),fit: BoxFit.cover)
                                   ),),),
                               Container(height: 50,width: 270,
                                   child: Row(
                                     children: [
-                                      Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      Padding(padding: EdgeInsets.only(left: 80)),
-                                      Text("150",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      Text("₹ ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                                      Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                           Padding(padding: EdgeInsets.only(top: 5)),
+                                          Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        ],
+                                      ),
+                                      Column(mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [Padding(
+                                          padding: const EdgeInsets.only(left: 80),
+                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
+                                        ],
+                                      )
                                     ],
                                   ),
                               ),

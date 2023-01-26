@@ -14,7 +14,7 @@ class _loginpageState extends State<loginpage> {
     return Scaffold(
       body: DecoratedBox(
         decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage("assets/images/img.png"),fit: BoxFit.cover),
+          image: DecorationImage(image: AssetImage("assets/images/login.png"),fit: BoxFit.cover),
         ),
         child: Center(
           child: SingleChildScrollView(

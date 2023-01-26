@@ -67,6 +67,7 @@ flutter:
   assets:
      - assets/images/imagesburger/bg2.png
      - assets/images/imagesburger/bg3.png
+     - assets/images/imagesburger/bgburger2.png
      - assets/images/iconburger.png
      - assets/images/iconcolddrink.png
      - assets/images/iconnoodles.png
@@ -74,8 +75,8 @@ flutter:
      - assets/images/iconpizza.png
      - assets/images/iconsandwich.png
      - assets/images/iconsweet.png
-     - assets/images/img.png
-     - assets/images/img_1.png
+     - assets/images/bgburger2.png
+     - assets/images/login.png
      - assets/images/label1.png
      - assets/images/label2.png
      - assets/images/label3.png
