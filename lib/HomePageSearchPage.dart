@@ -94,7 +94,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
       "time": "60m",
       "cal": "440cal",
       "gram": "210g"
-    },
+    },           // pizza
     {
       "title": "Pepperoni Pizza",
       "image": 'assets/images/imagespizza/bgsubpizza2.png',
@@ -166,7 +166,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
       "time": "20m",
       "cal": "458cal",
       "gram": "110g"
-    },
+    },          // sandwich
     {
       "title": "Chickpea Salad Sandwich",
       "image": 'assets/images/imagessandwich/bgsubsandwich2.png',
@@ -227,6 +227,150 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
       "cal": "263cal",
       "gram": "90g"
     },
+    {
+      "title": "Hakka noodles" ,
+      "image": 'assets/images/imagesnoodles/bgsubnoodles1.png',
+      "price": 250,
+      "info": "This is a Indo chinese hakka noodles where noodles are toasted with garlic and vegetables.",
+      "star": "4.5",
+      "likes": "548",
+      "mes": "156",
+      "time": "30m",
+      "cal": "289cal",
+      "gram": "110g"
+    },          // noodles
+    {
+      "title": "Schezwan noodles",
+      "image": 'assets/images/imagesnoodles/bgsubnoodles2.png',
+      "price": 240,
+      "info": "A popular and flavoured noodles recipe made with thin noodles and schezwan sauce. it is popular street food in india which can be served as a party starter or even as a meal for lunch and dinner.",
+      "star": "4.3",
+      "likes": "689",
+      "mes": "352",
+      "time": "30M",
+      "cal": "269cal",
+      "gram": "120g"
+    },
+    {
+      "title": "Malausian noodles",
+      "image": 'assets/images/imagesnoodles/bgsubnoodles3.png',
+      "price": 280,
+      "info": " A thrilling culinary adventure, the Malaysian Noodles is further enhanced with flavourful additions like garlic, soy sauce, lemon juice.",
+      "star": "4.4",
+      "likes": "693",
+      "mes": "352",
+      "time": "35m",
+      "cal": "452cal",
+      "gram": "130g"
+    },
+    {
+      "title": "Chinese noodles",
+      "image": 'assets/images/imagesnoodles/bgsubnoodles4.png',
+      "price": 350,
+      "info": "This unique Chinese noodles is made with fried noodles,tossed with colorful sauteed veggies and garnished with cruncy spring onion.",
+      "star": "4.2",
+      "likes": "460",
+      "mes": "352",
+      "time": "25m",
+      "cal": "403cal",
+      "gram": "140g"
+    },
+    {
+      "title": "Tangy capsicum noodles",
+      "image": 'assets/images/imagesnoodles/bgsubnoodles5.png',
+      "price": 310,
+      "info": "Tangy capsicum Noodles is a popular Indo-Chinese Dish. It is a tangy combination of noodles and capsicum which loved by all.",
+      "star": "4.3",
+      "likes": "596",
+      "mes": "286",
+      "time": "25m",
+      "cal": "383cal",
+      "gram": "110g"
+    },
+    {
+      "title": "Garlic noodles",
+      "image": 'assets/images/imagesnoodles/bgsubnoodles6.png',
+      "price": 210,
+      "info": "This Asian Chinese-style garlic noodles recipe includes noodles cooked with dry red chilies and red chili sauce for a vibrant, lightly spicy dish.",
+      "star": "4.2",
+      "likes": "635",
+      "mes": "159",
+      "time": "15m",
+      "cal": "320cal",
+      "gram": "100g"
+    },
+    {
+      "title": "Cinnamon Fruit Biscuits",
+      "image": 'assets/images/imagessweet/bgsubsweet1.png',
+      "price": 220,
+      "info": "When you bite into these wonderful biscuits you will hear a little crunch!  That is the mixture of butter, cinnamon and sugar.",
+      "star": "4.5",
+      "likes": "963",
+      "mes": "451",
+      "time": "35m",
+      "cal": "360cal",
+      "gram": "150g"
+    },           // sweet
+    {
+      "title": "Cinnamon Rolls",
+      "image": 'assets/images/imagessweet/bgsubsweet2.png',
+      "price": 160,
+      "info": "These cinnamon rolls are not just delicious but healthy too.Its main ingredients are flour, cinnamon, sugar, and butter, which provide a robust and sweet flavor.",
+      "star": "4.7",
+      "likes": "859",
+      "mes": "350",
+      "time": "60m",
+      "cal": "378cal",
+      "gram": "150g"
+    },
+    {
+      "title": "Gajar Ka Halwa",
+      "image": 'assets/images/imagessweet/bgsubsweet3.png',
+      "price": 150,
+      "info": "Warm your winter with this sweet that is sure to delight even the pickiest of dessert eaters! Halwa made Indian style with grated carrot, condensed milk, nuts and golden varq.",
+      "star": "4.6",
+      "likes": "754",
+      "mes": "359",
+      "time": "35m",
+      "cal": "450cal",
+      "gram": "200g"
+    },
+    {
+      "title": "Aam Shrikhand",
+      "image": 'assets/images/imagessweet/bgsubsweet4.png',
+      "price": 180,
+      "info": "A Gujarati favorite made with hung curd. Few ingredients, great flavors! In this recipe mildly sweetened yogurt is studded with mango pieces and served with a zesty mango salad.",
+      "star": "4.5",
+      "likes": "613",
+      "mes": "254",
+      "time": "25m",
+      "cal": "345cal",
+      "gram": "200g"
+    },
+    {
+      "title": "Gulab Jamun",
+      "image": 'assets/images/imagessweet/bgsubsweet5.png',
+      "price": 110,
+      "info": "The good old delight made with khoya, fried golden and finally dipped in saffron induced sugar syrup. Also a festive favourite! ",
+      "star": "4.5",
+      "likes": "758",
+      "mes": "653",
+      "time": "30m",
+      "cal": "3100cal",
+      "gram": "150g"
+    },
+    {
+      "title": "Modak",
+      "image": 'assets/images/imagessweet/bgsubsweet6.png',
+      "price": 150,
+      "info": "Sweet flour dumplings stuffed with coconut, jaggery, nutmeg and saffron. Steamed to perfection. A famous Indian dessert prepared during the festival of Ganesh Chaturthi.",
+      "star": "4.6",
+      "likes": "785",
+      "mes": "208",
+      "time": "30m",
+      "cal": "285cal",
+      "gram": "150g"
+    },
   ];
 
   get index => Data;
@@ -248,7 +392,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
             ),
             indicatorColor: Colors.deepPurple,
             labelPadding: EdgeInsets.only(left: 15,right: 15),
-            unselectedLabelColor: Color(0xFFFFAC2F),
+            unselectedLabelColor: Colors.grey,
             labelColor: Colors.deepPurple,
             isScrollable: true,
             padding: EdgeInsets.zero,
@@ -256,8 +400,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
               Tab(icon: Image(image: AssetImage("assets/images/iconburger.png"),height: 50,width: 50,),child: Text("Burger",style: TextStyle(fontSize: 10),),),
               Tab(icon: Image(image: AssetImage("assets/images/iconpizza.png"),height: 50,width: 50,),child: Text("Pizza",style: TextStyle(fontSize: 10),),),
               Tab(icon: Image(image: AssetImage("assets/images/iconsandwich.png"),height: 50,width: 50,),child: Text("Sandwich",style: TextStyle(fontSize: 10),),),
-              Tab(icon: Image(image: AssetImage("assets/images/iconnoodles.png"),height: 50,width: 50,),child: Text("Pasta",style: TextStyle(fontSize: 10),),),
-              Tab(icon: Image(image: AssetImage("assets/images/iconrice.png"),height: 50,width: 50,),child: Text("Rice",style: TextStyle(fontSize: 10),),),
+              Tab(icon: Image(image: AssetImage("assets/images/iconnoodles.png"),height: 50,width: 50,),child: Text("Noodles",style: TextStyle(fontSize: 10),),),
               Tab(icon: Image(image: AssetImage("assets/images/iconsweet.png"),height: 50,width: 50,),child: Text("Sweet",style: TextStyle(fontSize: 10),),),
               Tab(icon: Image(image: AssetImage("assets/images/iconcolddrink.png"),height: 45,width: 50,),child: Text("Colddrinks",style: TextStyle(fontSize: 10),),),
             ],
@@ -972,7 +1115,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[18])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -985,16 +1128,168 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
                                 child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesnoodles/bgnoodles1.png"),fit: BoxFit.cover)
                                   ),),),
                               Container(height: 50,width: 270,
                                 child: Row(
                                   children: [
                                     Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("Hakka noodles ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("250₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                      ],
+                                    ),
+                                    Column(mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [Padding(
+                                          padding: const EdgeInsets.only(left: 140),
+                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[19])));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesnoodles/bgnoodles2.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text("Schezwan noodles",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Padding(padding: EdgeInsets.only(top: 5)),
+                                        Text("240₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                      ],
+                                    ),
+                                    Column(mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [Padding(
+                                          padding: const EdgeInsets.only(left: 120),
+                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[20])));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesnoodles/bgnoodles3.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text("Malausian noodles",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Padding(padding: EdgeInsets.only(top: 5)),
+                                        Text("280₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                      ],
+                                    ),
+                                    Column(mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [Padding(
+                                          padding: const EdgeInsets.only(left: 110),
+                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[21])));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesnoodles/bgnoodles4.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text("Chinese noodles",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Padding(padding: EdgeInsets.only(top: 5)),
+                                        Text("350₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                      ],
+                                    ),
+                                    Column(mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [Padding(
+                                          padding: const EdgeInsets.only(left: 130),
+                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],),),),),
+                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[22])));
+                        },
+                        child: Container(
+                          height: 250,width: 500,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFEDEDF0),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
+                                child: Container(height: 170,
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesnoodles/bgnoodles5.png"),fit: BoxFit.cover)
+                                  ),),),
+                              Container(height: 50,width: 270,
+                                child: Row(
+                                  children: [
+                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text("Tangy capsicum noodles",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Padding(padding: EdgeInsets.only(top: 5)),
+                                        Text("310₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
@@ -1010,7 +1305,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[23])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -1023,406 +1318,21 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
                                 child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesnoodles/bgnoodles6.png"),fit: BoxFit.cover)
                                   ),),),
                               Container(height: 50,width: 270,
                                 child: Row(
                                   children: [
                                     Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("Garlic noodles ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("210",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
                                       children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                  ],
-                )),
-            SingleChildScrollView(       // Rice
-                child: Column(
-                  children: [
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
-                                          child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],),),),),
-                    Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
-                      child: GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
-                        },
-                        child: Container(
-                          height: 250,width: 500,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFEDEDF0),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
-                                child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
-                                  ),),),
-                              Container(height: 50,width: 270,
-                                child: Row(
-                                  children: [
-                                    Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                        Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
-                                      ],
-                                    ),
-                                    Column(mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
+                                          padding: const EdgeInsets.only(left: 140),
                                           child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
                                       ],
                                     )
@@ -1438,7 +1348,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[24])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -1451,21 +1361,21 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
                                 child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagessweet/bgsweet1.png"),fit: BoxFit.cover)
                                   ),),),
                               Container(height: 50,width: 270,
                                 child: Row(
                                   children: [
                                     Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("Cinnamon Fruit Biscuits ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("220₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
                                       children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
+                                          padding: const EdgeInsets.only(left: 85),
                                           child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
                                       ],
                                     )
@@ -1476,7 +1386,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[25])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -1489,21 +1399,21 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
                                 child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagessweet/bgsweet2.png"),fit: BoxFit.cover)
                                   ),),),
                               Container(height: 50,width: 270,
                                 child: Row(
                                   children: [
                                     Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("Cinnamon Rolls ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("160₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
                                       children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
+                                          padding: const EdgeInsets.only(left: 135),
                                           child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
                                       ],
                                     )
@@ -1514,7 +1424,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[26])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -1527,21 +1437,21 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
                                 child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagessweet/bgsweet3.png"),fit: BoxFit.cover)
                                   ),),),
                               Container(height: 50,width: 270,
                                 child: Row(
                                   children: [
                                     Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("Gajar Ka Halwa ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("150₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
                                       children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
+                                          padding: const EdgeInsets.only(left: 140),
                                           child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
                                       ],
                                     )
@@ -1552,7 +1462,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[27])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -1565,21 +1475,21 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
                                 child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagessweet/bgsweet4.png"),fit: BoxFit.cover)
                                   ),),),
                               Container(height: 50,width: 270,
                                 child: Row(
                                   children: [
                                     Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("Aam Shrikhand",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("180₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
                                       children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
+                                          padding: const EdgeInsets.only(left: 140),
                                           child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
                                       ],
                                     )
@@ -1590,7 +1500,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[28])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -1603,21 +1513,21 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
                                 child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagessweet/bgsweet5.png"),fit: BoxFit.cover)
                                   ),),),
                               Container(height: 50,width: 270,
                                 child: Row(
                                   children: [
                                     Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("Gulab Jamun",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("110₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
                                       children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
+                                          padding: const EdgeInsets.only(left: 150),
                                           child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
                                       ],
                                     )
@@ -1628,7 +1538,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[29])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -1641,21 +1551,21 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
                                 child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagessweet/bgsweet6.png"),fit: BoxFit.cover)
                                   ),),),
                               Container(height: 50,width: 270,
                                 child: Row(
                                   children: [
                                     Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("Modak",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("150₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
                                       children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
+                                          padding: const EdgeInsets.only(left: 190),
                                           child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
                                       ],
                                     )

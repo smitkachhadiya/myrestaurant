@@ -77,6 +77,18 @@ flutter:
      - assets/images/imagesburger/bgsubburger4.png
      - assets/images/imagesburger/bgsubburger5.png
      - assets/images/imagesburger/bgsubburger6.png
+     - assets/images/imagesnoodles/bgnoodles1.png
+     - assets/images/imagesnoodles/bgnoodles2.png
+     - assets/images/imagesnoodles/bgnoodles3.png
+     - assets/images/imagesnoodles/bgnoodles4.png
+     - assets/images/imagesnoodles/bgnoodles5.png
+     - assets/images/imagesnoodles/bgnoodles6.png
+     - assets/images/imagesnoodles/bgsubnoodles1.png
+     - assets/images/imagesnoodles/bgsubnoodles2.png
+     - assets/images/imagesnoodles/bgsubnoodles3.png
+     - assets/images/imagesnoodles/bgsubnoodles4.png
+     - assets/images/imagesnoodles/bgsubnoodles5.png
+     - assets/images/imagesnoodles/bgsubnoodles6.png
      - assets/images/imagespizza/bgpizza1.png
      - assets/images/imagespizza/bgpizza2.png
      - assets/images/imagespizza/bgpizza3.png
@@ -101,6 +113,18 @@ flutter:
      - assets/images/imagessandwich/bgsubsandwich4.png
      - assets/images/imagessandwich/bgsubsandwich5.png
      - assets/images/imagessandwich/bgsubsandwich6.png
+     - assets/images/imagessweet/bgsweet1.png
+     - assets/images/imagessweet/bgsweet2.png
+     - assets/images/imagessweet/bgsweet3.png
+     - assets/images/imagessweet/bgsweet4.png
+     - assets/images/imagessweet/bgsweet5.png
+     - assets/images/imagessweet/bgsweet6.png
+     - assets/images/imagessweet/bgsubsweet1.png
+     - assets/images/imagessweet/bgsubsweet2.png
+     - assets/images/imagessweet/bgsubsweet3.png
+     - assets/images/imagessweet/bgsubsweet4.png
+     - assets/images/imagessweet/bgsubsweet5.png
+     - assets/images/imagessweet/bgsubsweet6.png
      - assets/images/iconburger.png
      - assets/images/iconcolddrink.png
      - assets/images/iconnoodles.png
