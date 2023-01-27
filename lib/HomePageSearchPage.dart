@@ -377,7 +377,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 7,
+      length: 6,
       child: Scaffold(
         backgroundColor: Color(0xFFF8F8F9),
         appBar: AppBar(

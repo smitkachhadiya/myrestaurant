@@ -23,13 +23,22 @@ class _SubItemPageState extends State<SubItemPage> {
       }
     });
   }
-
   void decrement(s){
     setState(() {
        m = s;
       if(count>=2){
         count--;
         m = m * count;
+      }
+    });
+  }
+  bool _isfavourited = true;
+  void changeFavourite() {
+    setState(() {
+      if (_isfavourited) {
+        _isfavourited = false;
+      } else {
+        _isfavourited = true;
       }
     });
   }
@@ -41,6 +50,17 @@ class _SubItemPageState extends State<SubItemPage> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         iconTheme: CupertinoIconThemeData(color: Colors.black),
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: IconButton(
+              icon: (_isfavourited
+                  ? const Icon(Icons.favorite_outline_rounded,color: Colors.white,)
+                  : const Icon(Icons.favorite,color: Colors.red,)),
+              onPressed: changeFavourite,
+            ),
+          )
+        ],
       ),
       extendBodyBehindAppBar: true,
       body: DecoratedBox(
