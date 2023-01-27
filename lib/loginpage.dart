@@ -18,6 +18,7 @@ class _loginpageState extends State<loginpage> {
         ),
         child: Center(
           child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
             reverse: false,
             child: Column(
               children: [
