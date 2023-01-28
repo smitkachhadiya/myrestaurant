@@ -1,3 +1,4 @@
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -11,6 +12,11 @@ class register extends StatefulWidget {
 class _registerState extends State<register> {
   // This widget is the root of your application.
   TextEditingController dateInput = TextEditingController();
+  TextEditingController usernameController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+  List<Map> userdata = [];
+  FirebaseDatabase database = FirebaseDatabase.instance;
+  String selectedKey = ' ';
 
   void initState() {
     dateInput.text = ""; //set the initial value of text field
@@ -49,6 +55,7 @@ class _registerState extends State<register> {
                   child: Column(children: [
                     Padding(padding: const EdgeInsets.all(10)),
                     TextField(
+                      controller: usernameController,
                       decoration: InputDecoration(
                           contentPadding: EdgeInsets.all(20),
                           border: OutlineInputBorder(
@@ -98,6 +105,7 @@ class _registerState extends State<register> {
                     ),
                     Padding(padding: const EdgeInsets.all(10)),
                     TextField(
+                      controller: passwordController,
                       decoration: InputDecoration(
                           contentPadding: EdgeInsets.all(20),
                           border: OutlineInputBorder(
@@ -146,10 +154,13 @@ class _registerState extends State<register> {
                     Container(width: 300,decoration: BoxDecoration(color: Color(0xFFFFAC2F),borderRadius: BorderRadius.circular(30)),
                       child: TextButton(
                         onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => loginpage()));
+                          String? key = database.ref("user").push().key;
+                          database.ref("user").child(key!).set({
+                            "username" : usernameController.text,
+                            "password" : passwordController.text,
+                            "key" : key,
+                          });
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => loginpage()));
                         },
                         child: Text(
                           "SUBMIT",

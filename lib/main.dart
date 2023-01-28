@@ -1,9 +1,12 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:restaurant/loginpage.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
       home: splashScreen()));
