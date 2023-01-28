@@ -13,8 +13,8 @@ class _loginpageState extends State<loginpage> {
   TextEditingController _usernameController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
   FirebaseDatabase database = FirebaseDatabase.instance;
+  int e = 0;
 
-  // get userdata => database.ref("user");
   void _verifydata() async {
     DatabaseReference ref = FirebaseDatabase.instance.ref("user");
     DatabaseEvent d = await ref.once();
@@ -26,6 +26,10 @@ class _loginpageState extends State<loginpage> {
       if(temp[key]["username"] == _usernameController.text && temp[key]["password"] == _passwordController.text){
          print(temp[key]["password"] + temp[key]["username"] + _usernameController.text + _passwordController.text);
          Navigator.push(context, MaterialPageRoute(builder: (context) => homepage()));
+         e = 1;
+      }
+      else{
+        e = 2;
       }
       // print(temp[key]["password"]);
     });
@@ -79,6 +83,7 @@ class _loginpageState extends State<loginpage> {
                       Padding(padding: const EdgeInsets.all(10)),
                       TextField(
                         controller: _passwordController,
+                        obscureText: true,
                         decoration: InputDecoration(
                             contentPadding: EdgeInsets.all(20),
                             border: OutlineInputBorder(
@@ -92,6 +97,16 @@ class _loginpageState extends State<loginpage> {
                       Padding(
                         padding: EdgeInsets.only(left: 190,top: 5),
                         child: Text("Forgot password ?", style: TextStyle(color: Colors.lightBlue)),
+                      ),
+                      Container(
+                        alignment: AlignmentDirectional.center,
+                        margin: EdgeInsets.only(top: 10),
+                        child: Text(
+                          e == 2
+                              ? "Please enter valid username and password"
+                              : " ",
+                          style: TextStyle(color: Colors.red,fontSize: 20),
+                        ),
                       ),
                       Padding(padding: const EdgeInsets.all(30)),
                       Container(
