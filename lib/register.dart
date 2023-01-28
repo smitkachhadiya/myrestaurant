@@ -18,6 +18,15 @@ class _registerState extends State<register> {
   FirebaseDatabase database = FirebaseDatabase.instance;
   String selectedKey = ' ';
 
+  void _registeration(){
+    String? key = database.ref("user").push().key;
+    database.ref("user").child(key!).set({
+      "username" : usernameController.text,
+      "password" : passwordController.text,
+      "key" : key,
+    });
+  }
+
   void initState() {
     dateInput.text = ""; //set the initial value of text field
     super.initState();
@@ -154,12 +163,7 @@ class _registerState extends State<register> {
                     Container(width: 300,decoration: BoxDecoration(color: Color(0xFFFFAC2F),borderRadius: BorderRadius.circular(30)),
                       child: TextButton(
                         onPressed: () {
-                          String? key = database.ref("user").push().key;
-                          database.ref("user").child(key!).set({
-                            "username" : usernameController.text,
-                            "password" : passwordController.text,
-                            "key" : key,
-                          });
+                          _registeration();
                           Navigator.push(context, MaterialPageRoute(builder: (context) => loginpage()));
                         },
                         child: Text(
