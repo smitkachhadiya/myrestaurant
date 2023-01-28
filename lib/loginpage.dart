@@ -1,3 +1,4 @@
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:restaurant/homepage.dart';
 import 'package:restaurant/register.dart';
@@ -8,6 +9,27 @@ class loginpage extends StatefulWidget {
 }
 
 class _loginpageState extends State<loginpage> {
+
+  TextEditingController _usernameController = TextEditingController();
+  TextEditingController _passwordController = TextEditingController();
+  FirebaseDatabase database = FirebaseDatabase.instance;
+
+  // get userdata => database.ref("user");
+  void _verifydata() async {
+    DatabaseReference ref = FirebaseDatabase.instance.ref("user");
+    DatabaseEvent d = await ref.once();
+    Map temp = d.snapshot.value as Map;
+    setState(() {});
+    print("---- $temp");
+    print(_passwordController.text);
+    temp.forEach((key, value) {
+      if(temp[key]["username"] == _usernameController.text && temp[key]["password"] == _passwordController.text){
+         print(temp[key]["password"] + temp[key]["username"] + _usernameController.text + _passwordController.text);
+         Navigator.push(context, MaterialPageRoute(builder: (context) => homepage()));
+      }
+      // print(temp[key]["password"]);
+    });
+  }
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -43,6 +65,7 @@ class _loginpageState extends State<loginpage> {
                     children: [
                       Padding(padding: EdgeInsets.only(top: 15)),
                       TextField(
+                        controller: _usernameController,
                         decoration: InputDecoration(
                             contentPadding: EdgeInsets.all(20),
                             border: OutlineInputBorder(
@@ -55,6 +78,7 @@ class _loginpageState extends State<loginpage> {
                       ),
                       Padding(padding: const EdgeInsets.all(10)),
                       TextField(
+                        controller: _passwordController,
                         decoration: InputDecoration(
                             contentPadding: EdgeInsets.all(20),
                             border: OutlineInputBorder(
@@ -74,8 +98,9 @@ class _loginpageState extends State<loginpage> {
                         width: 300,
                         child: FloatingActionButton.extended(
                           onPressed: () {
-                            Navigator.push(context,
-                                MaterialPageRoute(builder: (context) => homepage()));},
+                            _verifydata();
+
+                          },
                           heroTag: "btn1",
                           splashColor: Colors.blueGrey,
                           backgroundColor: Color(0xFFFFAC2F),
@@ -95,8 +120,8 @@ class _loginpageState extends State<loginpage> {
                           width: 300,
                           child: FloatingActionButton.extended(
                             onPressed: () {
-                              Navigator.push(context,
-                                  MaterialPageRoute(builder: (context) => register()));
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: (context) => register()));
                             },
                             heroTag: "btn2",
                             splashColor: Colors.blueGrey,
