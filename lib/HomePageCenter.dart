@@ -70,7 +70,9 @@ class _HomePageCenterState extends State<HomePageCenter> {
                         shape: BoxShape.rectangle,
                         borderRadius: BorderRadiusDirectional.all(Radius.circular(30))),
                     child: TextButton(
-                      onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context) => HomePageSearchPage()));},
+                      onPressed: (){
+                        Navigator.push(context,MaterialPageRoute(builder: (context) => HomePageSearchPage()));
+                        },
                       child: Row(
                         children: [
                         Padding(
