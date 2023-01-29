@@ -371,6 +371,78 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
       "cal": "285cal",
       "gram": "150g"
     },
+    {
+      "title": "Coca cola",
+      "image": 'assets/images/imagesdrink/bgsubdrink1.png',
+      "price": 50,
+      "info": "Ingredients : Carbonated Water, Sugar, Acidity Regulators (338), Caffeine. Contains Permitted Natural Colour (150D) And Added Flavours (Natural Flavouring Substances).",
+      "star": "4.6",
+      "likes": "485",
+      "mes": "259",
+      "time": " - ",
+      "cal": "145cal",
+      "gram": "300ml"
+    },          // drinks
+    {
+      "title": "Sprite",
+      "image": 'assets/images/imagesdrink/bgsubdrink2.png',
+      "price": 40,
+      "info": "Ingredients : Carbonated Water, Sugar, Acidity Regulator (330, 331), Preservative (211). Contains Added Flavours (Natural Flavouring Substances). ",
+      "star": "4.5",
+      "likes": "539",
+      "mes": "218",
+      "time": " - ",
+      "cal": "140cal",
+      "gram": "300ml"
+    },
+    {
+      "title": "Pepsi",
+      "image": 'assets/images/imagesdrink/bgsubdrink3.png',
+      "price": 40,
+      "info": "Ingredients : Carbonated Water, Sugar, Acidity Regulator (338), Caffein. Contains Permitted Natural Colour (150d) And Added Flavour (natural Flavouring Substances).",
+      "star": "4.4",
+      "likes": "485",
+      "mes": "236",
+      "time": " - ",
+      "cal": "135cal",
+      "gram": "300ml"
+    },
+    {
+      "title": "Fanta",
+      "image": 'assets/images/imagesdrink/bgsubdrink4.png',
+      "price": 45,
+      "info": "Ingredients : Carbonated Water, Sugar, Acidity Regulator (330), Stabilisers (414, 445) Preservative (211), Contains Permitted Synthetic Food Colour (110) And Added Flavours, (Natural & Nature-Identical Flavouring Substances).",
+      "star": "4.5",
+      "likes": "358",
+      "mes": "146",
+      "time": " - ",
+      "cal": "285cal",
+      "gram": "300ml"
+    },
+    {
+      "title": "Limca",
+      "image": 'assets/images/imagesdrink/bgsubdrink5.png',
+      "price": 40,
+      "info": "Ingredients : Carbonated Water, Sugar, Acidity Regulators (330, 331), Stabilisers (414, 471), Preservative (211). Contains Permitted Class II Preservative & Added Flavours (Natural, Nature Identical, Artificial Flavouring Substances). Contains No Fruit.",
+      "star": "4.6",
+      "likes": "450",
+      "mes": "108",
+      "time": " - ",
+      "cal": "145cal",
+      "gram": "300ml"
+    },
+    {
+      "title": "Thums up",
+      "image": 'assets/images/imagesdrink/bgsubdrink6.png',
+      "price": 40,
+      "info": "Ingredients : Carbonated Water, Sugar, Acidity Regulator (338), Caffeine. Contains Permitted Natural Colour (150D) And Added Flavours (Natural, Nature - Identical And Artificial Flavouring Substances - Cola Flavour). ",
+      "star": "4.3",
+      "likes": "485",
+      "mes": "160",
+      "time": " - ",
+      "cal": "135cal",
+      "gram": "300ml"
+    },
   ];
 
   get index => Data;
@@ -1581,7 +1653,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[30])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -1594,21 +1666,21 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
                                 child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesdrink/bgdrink1.png"),fit: BoxFit.cover)
                                   ),),),
                               Container(height: 50,width: 270,
                                 child: Row(
                                   children: [
                                     Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("Coca cola",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("50₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
                                       children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
+                                          padding: const EdgeInsets.only(left: 175),
                                           child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
                                       ],
                                     )
@@ -1619,7 +1691,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[31])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -1632,21 +1704,21 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
                                 child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesdrink/bgdrink2.png"),fit: BoxFit.cover)
                                   ),),),
                               Container(height: 50,width: 270,
                                 child: Row(
                                   children: [
                                     Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("Sprite",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("40₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
                                       children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
+                                          padding: const EdgeInsets.only(left: 200),
                                           child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
                                       ],
                                     )
@@ -1657,7 +1729,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[32])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -1670,21 +1742,21 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
                                 child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesdrink/bgdrink3.png"),fit: BoxFit.cover)
                                   ),),),
                               Container(height: 50,width: 270,
                                 child: Row(
                                   children: [
                                     Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("Pepsi",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("40₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
                                       children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
+                                          padding: const EdgeInsets.only(left: 200),
                                           child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
                                       ],
                                     )
@@ -1695,7 +1767,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[33])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -1708,21 +1780,21 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
                                 child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesdrink/bgdrink4.png"),fit: BoxFit.cover)
                                   ),),),
                               Container(height: 50,width: 270,
                                 child: Row(
                                   children: [
                                     Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("Fanta",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("45₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
                                       children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
+                                          padding: const EdgeInsets.only(left: 200),
                                           child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
                                       ],
                                     )
@@ -1733,7 +1805,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[34])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -1746,21 +1818,21 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
                                 child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesdrink/bgdrink5.png"),fit: BoxFit.cover)
                                   ),),),
                               Container(height: 50,width: 270,
                                 child: Row(
                                   children: [
                                     Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("Limca",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("40₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
                                       children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
+                                          padding: const EdgeInsets.only(left: 200),
                                           child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
                                       ],
                                     )
@@ -1771,7 +1843,7 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                     Padding(padding: const EdgeInsets.only(top: 10,left: 20,right: 20),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => subBurger01()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SubItemPage(Data[35])));
                         },
                         child: Container(
                           height: 250,width: 500,
@@ -1784,21 +1856,21 @@ class _HomePageSearchPageState extends State<HomePageSearchPage> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 12,left: 12,right: 12),
                                 child: Container(height: 170,
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesburger/bgburger2.png"),fit: BoxFit.cover)
+                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),image: DecorationImage(image: AssetImage("assets/images/imagesdrink/bgdrink6.png"),fit: BoxFit.cover)
                                   ),),),
                               Container(height: 50,width: 270,
                                 child: Row(
                                   children: [
                                     Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("POTATO CORN BURGER ",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("Thums up",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                         Padding(padding: EdgeInsets.only(top: 5)),
-                                        Text("320₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                                        Text("40₹",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
                                       ],
                                     ),
                                     Column(mainAxisAlignment: MainAxisAlignment.center,
                                       children: [Padding(
-                                          padding: const EdgeInsets.only(left: 80),
+                                          padding: const EdgeInsets.only(left: 170),
                                           child: Icon(Icons.favorite_outline_rounded,color: Colors.grey,)),
                                       ],
                                     )
