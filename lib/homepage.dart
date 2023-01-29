@@ -30,7 +30,7 @@ class _homepageState extends State<homepage> {
           BottomNavigationBarItem(icon: Icon(Icons.ac_unit), label: "home"),
           BottomNavigationBarItem(icon: Icon(Icons.fastfood), label: "Fastfood"),
           BottomNavigationBarItem(icon: Icon(Icons.edit_notifications_outlined), label: "Notifications"),
-          BottomNavigationBarItem(icon: Icon(Icons.account_circle), label: "profile"),
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart), label: "My Cart"),
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,

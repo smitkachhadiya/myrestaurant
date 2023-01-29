@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slider/carousel.dart';
 
@@ -11,10 +12,15 @@ class _HomePageNotificationsState extends State<HomePageNotifications> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        iconTheme: CupertinoIconThemeData(color: Colors.black),
+        title: Text("Notifications",style: TextStyle(color: Colors.black)),
+      ),
       body: Center(
         child: Column(
           children: [
-            SizedBox(height: 100,),
             SizedBox(
               height: 370,
               child: Carousel(
