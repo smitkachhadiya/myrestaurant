@@ -14,6 +14,12 @@ class _registerState extends State<register> {
   TextEditingController dateInput = TextEditingController();
   TextEditingController usernameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController mnoController = TextEditingController();
+  TextEditingController genderController = TextEditingController();
+  TextEditingController addressController = TextEditingController();
+  TextEditingController hobbiesController = TextEditingController();
+
   List<Map>  userdata = [];
   FirebaseDatabase database = FirebaseDatabase.instance;
   String selectedKey = ' ';
@@ -24,6 +30,8 @@ class _registerState extends State<register> {
     database.ref("user").child(key!).set({
       "username" : usernameController.text,
       "password" : passwordController.text,
+      "email" : emailController.text,
+      "mobileno" : mnoController.text,
       "key" : key,
     });
   }
@@ -79,6 +87,7 @@ class _registerState extends State<register> {
                     Padding(padding: const EdgeInsets.all(10)),
                     TextField(
                       keyboardType: TextInputType.number,
+                      controller: mnoController,
                       decoration: InputDecoration(
                           contentPadding: EdgeInsets.all(20),
                           border: OutlineInputBorder(
@@ -91,6 +100,7 @@ class _registerState extends State<register> {
                     ),
                     Padding(padding: const EdgeInsets.all(10)),
                     TextField(
+                      controller: emailController,
                       decoration: InputDecoration(
                           contentPadding: EdgeInsets.all(20),
                           border: OutlineInputBorder(
@@ -103,6 +113,7 @@ class _registerState extends State<register> {
                     ),
                     Padding(padding: const EdgeInsets.all(10)),
                     TextField(
+                      controller: addressController,
                       decoration: InputDecoration(
                           contentPadding: EdgeInsets.all(20),
                           border: OutlineInputBorder(
@@ -137,7 +148,7 @@ class _registerState extends State<register> {
                         if (pickedDate != null) {
                           String formattedDate = DateFormat('yyyy-MM-dd').format(pickedDate);
                           setState(() {
-                            dateInput.text = formattedDate; //setoutputdatetoTextFieldvalue.
+                            dateInput.text = formattedDate;
                           });
                         }
                       },
@@ -167,6 +178,7 @@ class _registerState extends State<register> {
                     ),
                     Padding(padding: const EdgeInsets.only(bottom: 10,top: 4)),
                     TextField(
+                      controller: hobbiesController,
                       decoration: InputDecoration(
                         contentPadding: EdgeInsets.all(20),
                         border: OutlineInputBorder(
