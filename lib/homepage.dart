@@ -13,6 +13,7 @@ class _homepageState extends State<homepage> {
   @override
   int _selectedIndex = 0;
 
+
   void _onItemTapped(int index) {
     // enter items index vise
     setState(() {
