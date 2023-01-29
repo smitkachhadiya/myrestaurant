@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant/HomePageCenter.dart';
 import 'package:restaurant/HomePageNotifications.dart';
-import 'package:restaurant/HomePageCart.dart';
+import 'package:restaurant/HomePageProfile.dart';
 import 'package:restaurant/HomePageSearchPage.dart';
 
 class homepage extends StatefulWidget {
@@ -44,7 +44,7 @@ class _homepageState extends State<homepage> {
             new HomePageCenter(),
             new HomePageSearchPage(),
             new HomePageNotifications(),
-            new HomePageCart(),
+            new HomePageProfile(),
             //activity name
           ],
         ),
