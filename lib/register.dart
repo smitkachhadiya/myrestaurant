@@ -17,6 +17,7 @@ class _registerState extends State<register> {
   List<Map>  userdata = [];
   FirebaseDatabase database = FirebaseDatabase.instance;
   String selectedKey = ' ';
+  String gender = '';
 
   void _registeration(){
     String? key = database.ref("user").push().key;
@@ -146,7 +147,25 @@ class _registerState extends State<register> {
                           hintText: 'date',
                           prefixIcon: Icon(Icons.date_range)),
                     ),
-                    Padding(padding: const EdgeInsets.all(10)),
+                    Padding(padding: const EdgeInsets.all(4)),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text("Gender : ",style: TextStyle(fontWeight: FontWeight.bold,),),
+                        Radio(value: "Male", groupValue: gender, onChanged: (val){
+                          setState(() {
+                            gender = val.toString();
+                          });
+                        }),Text("Male"),
+                        SizedBox(width: 10,),
+                        Radio(value: "Female", groupValue: gender, onChanged: (val){
+                          setState(() {
+                            gender = val.toString();
+                          });
+                        }),Text("Female"),
+                      ],
+                    ),
+                    Padding(padding: const EdgeInsets.only(bottom: 10,top: 4)),
                     TextField(
                       decoration: InputDecoration(
                         contentPadding: EdgeInsets.all(20),
