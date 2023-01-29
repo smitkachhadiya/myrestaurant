@@ -46,6 +46,7 @@ class _HomePageCenterState extends State<HomePageCenter> {
                     ],
                 ),
               ),
+                SizedBox(height: 30,),
                 SizedBox(
                     height: 200,
                   child: Carousel(
@@ -61,7 +62,8 @@ class _HomePageCenterState extends State<HomePageCenter> {
                     ]
                   ),
                 ),
-                Padding(padding: EdgeInsets.all(10),
+                SizedBox(height: 4,),
+                Padding(padding: EdgeInsets.all(20),
                   child: Container(
                     height: 80,
                     width: double.infinity,
