@@ -1,6 +1,7 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:restaurant/loginpage.dart';
 
 class HomePageProfile extends StatefulWidget{
   @override
@@ -10,9 +11,19 @@ class HomePageProfile extends StatefulWidget{
 class _HomePageProfileState extends State<HomePageProfile> {
 
   FirebaseDatabase database = FirebaseDatabase.instance;
-  DatabaseReference ref = FirebaseDatabase.instance.ref("user");
+
+  // DatabaseEvent d = await ref.once();
+  // Map temp = d.snapshot.value as Map;
   TextEditingController usernameController = TextEditingController();
 
+
+   void _showdata() async {
+     DatabaseReference ref = FirebaseDatabase.instance.ref("user");
+     DatabaseEvent d = await ref.once();
+     Map p = d.snapshot.value as Map;
+     setState(() {});
+     print(p);
+   }
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -29,6 +40,11 @@ class _HomePageProfileState extends State<HomePageProfile> {
           children: [
             Container(height: 200,
             child: Icon(Icons.account_circle_sharp,size: 150),),
+            TextButton(
+                onPressed: (){
+                  _showdata();
+                },
+                child: Text(" hello ")),
           ],
         ),
       ),
