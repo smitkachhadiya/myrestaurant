@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slider/carousel.dart';
-import 'package:restaurant/HomePageProfile.dart';
+import 'package:restaurant/HomePageCart.dart';
 import 'package:restaurant/HomePageSearchPage.dart';
 import 'package:restaurant/loginpage.dart';
 
@@ -61,6 +61,30 @@ class _HomePageCenterState extends State<HomePageCenter> {
                     ]
                   ),
                 ),
+                Padding(padding: EdgeInsets.all(10),
+                  child: Container(
+                    height: 80,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Color(0xFFe66700)),
+                        shape: BoxShape.rectangle,
+                        borderRadius: BorderRadiusDirectional.all(Radius.circular(30))),
+                    child: TextButton(
+                      onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context) => HomePageSearchPage()));},
+                      child: Row(
+                        children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 30,right: 80),
+                          child: Text("Explore food",style: TextStyle(color: Color(0xFFe66700),fontSize: 30,),),
+                        ),
+                        Icon(Icons.fastfood_outlined,color: Color(0xFFe66700)),
+                      ],),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStatePropertyAll(Colors.transparent),
+                      ),
+                    ),
+                  ),
+                ),
                 Container(
                   height: 301,width: double.infinity,
                   decoration: BoxDecoration(
@@ -97,7 +121,7 @@ class NavigationDrawer extends StatelessWidget{
               ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.account_circle),
                 title: Text("Profile"),
                 onTap: (){Navigator.push(
-                    context,MaterialPageRoute(builder: (context) => HomePageProfile()));},),
+                    context,MaterialPageRoute(builder: (context) => HomePageCart()));},),
               ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.history_toggle_off), title: Text("History"), onTap: (){},),
               ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.favorite), title: Text("Favorite"), onTap: (){},),
               ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.shopping_cart_outlined),title: Text("My Cart"),onTap: (){},),
