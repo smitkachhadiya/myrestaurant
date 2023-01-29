@@ -87,6 +87,7 @@ class _HomePageCenterState extends State<HomePageCenter> {
                     ),
                   ),
                 ),
+
                 Container(
                   height: 301,width: double.infinity,
                   decoration: BoxDecoration(
