@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class HomePageProfile extends StatefulWidget{
+class HomePageCart extends StatefulWidget{
   @override
-  State<HomePageProfile> createState() => _HomePageProfileState();
+  State<HomePageCart> createState() => _HomePageCartState();
 }
 
-class _HomePageProfileState extends State<HomePageProfile> {
+class _HomePageCartState extends State<HomePageCart> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

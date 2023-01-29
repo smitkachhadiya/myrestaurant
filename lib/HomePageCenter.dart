@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slider/carousel.dart';
-import 'package:restaurant/HomePageProfile.dart';
+import 'package:restaurant/HomePageCart.dart';
 import 'package:restaurant/HomePageSearchPage.dart';
 import 'package:restaurant/loginpage.dart';
 
@@ -124,7 +124,7 @@ class NavigationDrawer extends StatelessWidget{
               ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.account_circle),
                 title: Text("Profile"),
                 onTap: (){Navigator.push(
-                    context,MaterialPageRoute(builder: (context) => HomePageProfile()));},),
+                    context,MaterialPageRoute(builder: (context) => HomePageCart()));},),
               ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.history_toggle_off), title: Text("History"), onTap: (){},),
               ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.favorite), title: Text("Favorite"), onTap: (){},),
               ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.shopping_cart_outlined),title: Text("My Cart"),onTap: (){},),
