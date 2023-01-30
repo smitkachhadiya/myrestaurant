@@ -20,6 +20,7 @@ class _registerState extends State<register> {
   TextEditingController hobbiesController = TextEditingController();
 
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
+  bool pass = true;
 
   List<Map>  userdata = [];
   FirebaseDatabase database = FirebaseDatabase.instance;
@@ -169,6 +170,7 @@ class _registerState extends State<register> {
                       Padding(padding: const EdgeInsets.all(10)),
                       TextFormField(
                         controller: passwordController,
+                        obscureText: pass,
                         decoration: InputDecoration(
                             contentPadding: EdgeInsets.all(20),
                             border: OutlineInputBorder(
@@ -177,7 +179,15 @@ class _registerState extends State<register> {
                             hintStyle: TextStyle(fontWeight: FontWeight.bold),
                             labelText: 'Password',
                             labelStyle: TextStyle(fontSize: 14),
-                            prefixIcon: Icon(Icons.admin_panel_settings_sharp)),
+                            prefixIcon: Icon(Icons.admin_panel_settings_sharp),
+                            suffixIcon: IconButton(
+                              icon : Icon(Icons.remove_red_eye,),
+                              onPressed: (){
+                                setState(() {
+                                  pass = !pass;
+                                });
+                              },),
+                        ),
                         validator: (value){
                           if(value!.isEmpty){
                             return 'Please Enter Password';

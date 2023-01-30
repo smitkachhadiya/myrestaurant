@@ -14,6 +14,7 @@ class _loginpageState extends State<loginpage> {
   TextEditingController _passwordController = TextEditingController();
   FirebaseDatabase database = FirebaseDatabase.instance;
   int e = 0;
+  bool pass = true;
 
   void _verifydata() async {
     DatabaseReference ref = FirebaseDatabase.instance.ref("user");
@@ -83,7 +84,7 @@ class _loginpageState extends State<loginpage> {
                       Padding(padding: const EdgeInsets.all(10)),
                       TextField(
                         controller: _passwordController,
-                        obscureText: true,
+                        obscureText: pass,
                         decoration: InputDecoration(
                             contentPadding: EdgeInsets.all(20),
                             border: OutlineInputBorder(
@@ -92,7 +93,15 @@ class _loginpageState extends State<loginpage> {
                             hintStyle: TextStyle(fontWeight: FontWeight.bold),
                             labelText: 'password',
                             labelStyle: TextStyle(fontSize: 14),
-                            prefixIcon: Icon(Icons.admin_panel_settings_sharp)),
+                            prefixIcon: Icon(Icons.admin_panel_settings_sharp),
+                            suffixIcon: IconButton(
+                              icon : Icon(Icons.remove_red_eye,),
+                              onPressed: (){
+                                setState(() {
+                                  pass = !pass;
+                                });
+                              },),
+                        ),
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: 190,top: 5),
