@@ -69,7 +69,7 @@ class _HomePageCenterState extends State<HomePageCenter> {
                     height: 200,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                        border: Border.all(color: Color(0xFFe66700)),
+                        border: Border.all(color: Colors.grey),
                         shape: BoxShape.rectangle,
                         borderRadius: BorderRadiusDirectional.all(Radius.circular(30))),
                     child: Column(
@@ -78,7 +78,7 @@ class _HomePageCenterState extends State<HomePageCenter> {
                           height: 130,width: double.infinity,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadiusDirectional.only(topStart: Radius.circular(30),topEnd: Radius.circular(30)),
-                              image: DecorationImage(image: AssetImage("assets/images/mainbg3.png"),fit: BoxFit.cover)
+                              image: DecorationImage(image: AssetImage("assets/images/mainbg3.png"),fit: BoxFit.fitHeight)
                           ),
                         ),
                        TextButton(
@@ -89,9 +89,9 @@ class _HomePageCenterState extends State<HomePageCenter> {
                           children: [
                           Padding(
                             padding: const EdgeInsets.only(left: 30,right: 80,top: 10),
-                            child: Text("Explore food",style: TextStyle(color: Color(0xFFe66700),fontSize: 30,),),
+                            child: Text("Explore food",style: TextStyle(color: Colors.grey,fontSize: 30,),),
                           ),
-                          Icon(Icons.fastfood_outlined,color: Color(0xFFe66700)),
+                          Icon(Icons.fastfood_outlined,color: Colors.grey),
                         ],),
                         style: ButtonStyle(
                           backgroundColor: MaterialStatePropertyAll(Colors.transparent),
