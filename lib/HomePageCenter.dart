@@ -52,6 +52,7 @@ class _HomePageCenterState extends State<HomePageCenter> {
                   child: Carousel(
                     autoScroll: true,
                     indicatorHeight: 8,
+                    isCircle: true,
                     autoScrollDuration: Duration(seconds: 3),
                     indicatorBarColor: Colors.transparent,
                     items : [
@@ -65,33 +66,42 @@ class _HomePageCenterState extends State<HomePageCenter> {
                 SizedBox(height: 4,),
                 Padding(padding: EdgeInsets.all(20),
                   child: Container(
-                    height: 80,
+                    height: 200,
                     width: double.infinity,
                     decoration: BoxDecoration(
                         border: Border.all(color: Color(0xFFe66700)),
                         shape: BoxShape.rectangle,
                         borderRadius: BorderRadiusDirectional.all(Radius.circular(30))),
-                    child: TextButton(
-                      onPressed: (){
-                        Navigator.push(context,MaterialPageRoute(builder: (context) => HomePageSearchPage()));
-                        },
-                      child: Row(
-                        children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 30,right: 80),
-                          child: Text("Explore food",style: TextStyle(color: Color(0xFFe66700),fontSize: 30,),),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 130,width: double.infinity,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadiusDirectional.only(topStart: Radius.circular(30),topEnd: Radius.circular(30)),
+                              image: DecorationImage(image: AssetImage("assets/images/mainbg3.png"),fit: BoxFit.cover)
+                          ),
                         ),
-                        Icon(Icons.fastfood_outlined,color: Color(0xFFe66700)),
-                      ],),
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStatePropertyAll(Colors.transparent),
-                      ),
+                       TextButton(
+                        onPressed: (){
+                          Navigator.push(context,MaterialPageRoute(builder: (context) => HomePageSearchPage()));
+                          },
+                        child: Row(
+                          children: [
+                          Padding(
+                            padding: const EdgeInsets.only(left: 30,right: 80,top: 10),
+                            child: Text("Explore food",style: TextStyle(color: Color(0xFFe66700),fontSize: 30,),),
+                          ),
+                          Icon(Icons.fastfood_outlined,color: Color(0xFFe66700)),
+                        ],),
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStatePropertyAll(Colors.transparent),
+                        ),
+                      ),],
                     ),
                   ),
                 ),
-
                 Container(
-                  height: 301,width: double.infinity,
+                  height: 200,width: double.infinity,
                   decoration: BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage("assets/images/mainbg2.png",),
@@ -119,25 +129,25 @@ class NavigationDrawer extends StatelessWidget{
     child: SingleChildScrollView(
       child: Column(
         children: [Padding(padding: EdgeInsets.zero),
-          Container(height: 200,color: Colors.blueAccent,),
+          Container(height: 100,color: Colors.blueAccent,),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.account_circle),
-                title: Text("Profile"),
-                onTap: (){Navigator.push(
-                    context,MaterialPageRoute(builder: (context) => HomePageCart()));},),
-              ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.history_toggle_off), title: Text("History"), onTap: (){},),
-              ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.favorite), title: Text("Favorite"), onTap: (){},),
-              ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.shopping_cart_outlined),title: Text("My Cart"),onTap: (){},),
-              ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.settings),title: Text("Settings"),onTap: (){},),
+              ListTile(leading: Icon(Icons.account_circle),title: Text("Profile"), onTap: (){},),
+              ListTile(leading: Icon(Icons.history_toggle_off),title: Text("History"), onTap: (){},),
+              ListTile(leading: Icon(Icons.favorite), title: Text("Favorite"), onTap: (){},),
+              ListTile(leading: Icon(Icons.shopping_cart_outlined),title: Text("My Cart"),
+                onTap: (){
+                  Navigator.push(context,MaterialPageRoute(builder: (context) => HomePageCart()));
+                },),
+              ListTile(leading: Icon(Icons.settings),title: Text("Settings"),onTap: (){},),
               Divider(),
-              ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.account_balance_wallet_outlined),title: Text("Wallet"),onTap: (){},),
-              ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.wallet_giftcard_rounded),title: Text("Coupens"),onTap: (){},),
+              ListTile(leading: Icon(Icons.account_balance_wallet_outlined),title: Text("Wallet"),onTap: (){},),
+              ListTile(leading: Icon(Icons.wallet_giftcard_rounded),title: Text("Coupens"),onTap: (){},),
               Divider(),
-              ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.contact_support_outlined),title: Text("Help & Support"),onTap: (){},),
-              ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3),leading: Icon(Icons.info_outlined),title: Text("About us"),onTap: (){},),
-              ListTile(visualDensity: VisualDensity(horizontal: 0,vertical: -3), leading: Icon(Icons.logout),
+              ListTile(leading: Icon(Icons.contact_support_outlined),title: Text("Help & Support"),onTap: (){},),
+              ListTile(leading: Icon(Icons.info_outlined),title: Text("About us"),onTap: (){},),
+              ListTile(leading: Icon(Icons.logout),
                 title: Text("Log out"),
                 onTap: (){Navigator.push(
                     context,MaterialPageRoute(builder: (context) => loginpage()));},),
